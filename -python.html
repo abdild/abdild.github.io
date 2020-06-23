@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Часть 1 Знакомство с Python | Python-разработчик</title>
+  <meta name="description" content="python" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Часть 1 Знакомство с Python | Python-разработчик" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://praktikum.yandex.ru/backend-developer/" />
+  
+  <meta property="og:description" content="python" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Часть 1 Знакомство с Python | Python-разработчик" />
+  
+  <meta name="twitter:description" content="python" />
+  
+
+<meta name="author" content="Источник: Яндекс Практикум" />
+
+
+<meta name="date" content="2020-06-23" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="diving-in.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    background-color: #ffffff;
+    color: #a0a0a0;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #a0a0a0;  padding-left: 4px; }
+div.sourceCode
+  { color: #1f1c1b; background-color: #ffffff; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span. { color: #1f1c1b; } /* Normal */
+code span.al { color: #bf0303; background-color: #f7e6e6; font-weight: bold; } /* Alert */
+code span.an { color: #ca60ca; } /* Annotation */
+code span.at { color: #0057ae; } /* Attribute */
+code span.bn { color: #b08000; } /* BaseN */
+code span.bu { color: #644a9b; font-weight: bold; } /* BuiltIn */
+code span.cf { color: #1f1c1b; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #924c9d; } /* Char */
+code span.cn { color: #aa5500; } /* Constant */
+code span.co { color: #898887; } /* Comment */
+code span.cv { color: #0095ff; } /* CommentVar */
+code span.do { color: #607880; } /* Documentation */
+code span.dt { color: #0057ae; } /* DataType */
+code span.dv { color: #b08000; } /* DecVal */
+code span.er { color: #bf0303; text-decoration: underline; } /* Error */
+code span.ex { color: #0095ff; font-weight: bold; } /* Extension */
+code span.fl { color: #b08000; } /* Float */
+code span.fu { color: #644a9b; } /* Function */
+code span.im { color: #ff5500; } /* Import */
+code span.in { color: #b08000; } /* Information */
+code span.kw { color: #1f1c1b; font-weight: bold; } /* Keyword */
+code span.op { color: #1f1c1b; } /* Operator */
+code span.ot { color: #006e28; } /* Other */
+code span.pp { color: #006e28; } /* Preprocessor */
+code span.re { color: #0057ae; background-color: #e0e9f8; } /* RegionMarker */
+code span.sc { color: #3daee9; } /* SpecialChar */
+code span.ss { color: #ff5500; } /* SpecialString */
+code span.st { color: #bf0303; } /* String */
+code span.va { color: #0057ae; } /* Variable */
+code span.vs { color: #bf0303; } /* VerbatimString */
+code span.wa { color: #bf0303; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="">Python-разработчик</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Описание</a></li>
+<li class="part"><span><b>I ОСНОВЫ PYTHON</b></span></li>
+<li class="chapter" data-level="1" data-path="-python.html"><a href="-python.html"><i class="fa fa-check"></i><b>1</b> Знакомство с Python</a><ul>
+<li class="chapter" data-level="1.1" data-path="-python.html"><a href="-python.html#как-работает-интернет"><i class="fa fa-check"></i><b>1.1</b> Как работает интернет</a></li>
+<li class="chapter" data-level="1.2" data-path="-python.html"><a href="-python.html#что-такое-python"><i class="fa fa-check"></i><b>1.2</b> Что такое Python</a></li>
+<li class="chapter" data-level="1.3" data-path="-python.html"><a href="-python.html#философия-python"><i class="fa fa-check"></i><b>1.3</b> Философия Python</a></li>
+<li class="chapter" data-level="1.4" data-path="-python.html"><a href="-python.html#ваш-первый-код-на-python"><i class="fa fa-check"></i><b>1.4</b> Ваш первый код на Python</a></li>
+<li class="chapter" data-level="1.5" data-path="-python.html"><a href="-python.html#переменные-и-типы"><i class="fa fa-check"></i><b>1.5</b> Переменные и типы</a></li>
+<li class="chapter" data-level="1.6" data-path="-python.html"><a href="-python.html#преобразование-типов"><i class="fa fa-check"></i><b>1.6</b> Преобразование типов</a></li>
+<li class="chapter" data-level="1.7" data-path="-python.html"><a href="-python.html#ошибки"><i class="fa fa-check"></i><b>1.7</b> Ошибки</a></li>
+<li class="chapter" data-level="1.8" data-path="-python.html"><a href="-python.html#именование-переменных"><i class="fa fa-check"></i><b>1.8</b> Именование переменных</a></li>
+<li class="chapter" data-level="1.9" data-path="-python.html"><a href="-python.html#вывод-на-экран"><i class="fa fa-check"></i><b>1.9</b> Вывод на экран</a></li>
+<li class="chapter" data-level="1.10" data-path="-python.html"><a href="-python.html#дробные-числа"><i class="fa fa-check"></i><b>1.10</b> Дробные числа</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="diving-in.html"><a href="diving-in.html"><i class="fa fa-check"></i><b>2</b> Diving In</a></li>
+<li class="chapter" data-level="3" data-path="technical-details.html"><a href="technical-details.html"><i class="fa fa-check"></i><b>3</b> Technical Details</a></li>
+<li class="divider"></li>
+<li><a href="https://praktikum.yandex.ru/backend-developer/" target="blank">Яндекс Практикум</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Python-разработчик</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="знакомство-с-python" class="section level1">
+<h1><span class="header-section-number">Часть 1</span> Знакомство с Python</h1>
+<div id="как-работает-интернет" class="section level2">
+<h2><span class="header-section-number">1.1</span> Как работает интернет</h2>
+<p>Понимаем, что вам уже не терпится написать свои первые строки кода. Но перед погружением в разработку полезно разобраться, как устроен интернет. Посмотрите видео о том, что происходит, когда вы набираете адрес сайта в браузере.</p>
+<p><strong>Чему вы научитесь</strong></p>
+<p>Для начала — основы Python. Вы научитесь отправлять запросы к настоящим серверам в интернете, получать ответы и обрабатывать их.</p>
+<p><strong>Постановка задачи</strong></p>
+<p>Вы создадите собственного персонального помощника вроде Алисы, Google Assistant, Siri, Alexa. Назовём её <strong><em>Анфиса</em></strong> :) Она слегка проще, знает только ваших друзей. Анфиса будет определять, в каком городе они находятся, и в режиме реального времени сообщать, какая у них погода.
+Поехали!</p>
+</div>
+<div id="что-такое-python" class="section level2">
+<h2><span class="header-section-number">1.2</span> Что такое Python</h2>
+<p>Python — язык простой: у него лаконичный и в то же время понятный синтаксис.</p>
+<p><strong><em>Python</em></strong> применяют IT-гиганты: Яндекс, Google, Facebook, Dropbox, Mozilla и Microsoft. На нём написаны такие приложения, как YouTube, Instagram, PayPal, внутренние сервисы Facebook и сервисы Wargaming.</p>
+<p>Обычно программы состоят из множества строк, в которых записаны команды на языке Python. Команды выполняются последовательно, одна за другой, и их выполнение приводит к желаемому результату.</p>
+<p>Знакомство с Python начнём с простой программы.</p>
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-1" class="exercise"><strong>Упражнение 1.1  </strong></span>
+</div>
+
+<p>В задаче этого урока вам предстоит выполнить готовую программу из одной строки. А в следующих уроках вы сами напишите свои первые программы. Вперёд!</p>
+<p>Мы приготовили для вас простую программу, состоящую из одной команды <code>import this</code>.</p>
+<p>Выполните программу.</p>
+
+<div class="solution">
+ <span class="solution"><em>Решение: </em></span> 
+</div>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> this</a></code></pre></div>
+<pre><code>## The Zen of Python, by Tim Peters
+## 
+## Beautiful is better than ugly.
+## Explicit is better than implicit.
+## Simple is better than complex.
+## Complex is better than complicated.
+## Flat is better than nested.
+## Sparse is better than dense.
+## Readability counts.
+## Special cases aren&#39;t special enough to break the rules.
+## Although practicality beats purity.
+## Errors should never pass silently.
+## Unless explicitly silenced.
+## In the face of ambiguity, refuse the temptation to guess.
+## There should be one-- and preferably only one --obvious way to do it.
+## Although that way may not be obvious at first unless you&#39;re Dutch.
+## Now is better than never.
+## Although never is often better than *right* now.
+## If the implementation is hard to explain, it&#39;s a bad idea.
+## If the implementation is easy to explain, it may be a good idea.
+## Namespaces are one honking great idea -- let&#39;s do more of those!</code></pre>
+<p>Это не обыкновенная команда, а «<strong><em>пасхальное яйцо</em></strong>», или «<strong><em>пасхалка</em></strong>». Эта команда ничего не импортирует, а <strong><em>выводит</em></strong> на экран при своём исполнении «Дзен Питона».</p>
+</div>
+<div id="философия-python" class="section level2">
+<h2><span class="header-section-number">1.3</span> Философия Python</h2>
+<p>Вы только что выполнили команду <code>import this</code> и увидели Дзен Питона.</p>
+<p>Это рекомендации, как сделать ваш код красивым и понятным для коллег. Когда научитесь настолько, что сможете решать одну и ту же задачу по-разному, вернитесь к этим правилам:</p>
+<ul>
+<li>Красивое лучше, чем уродливое.</li>
+<li>Явное лучше, чем неявное.</li>
+<li>Простое лучше, чем сложное.</li>
+<li>Сложное лучше, чем запутанное.</li>
+<li>Плоское лучше, чем вложенное.</li>
+<li>Разреженное лучше, чем плотное.</li>
+<li>Читаемость имеет значение.</li>
+<li>Особые случаи не настолько особые, чтобы нарушать правила.</li>
+<li>При этом практичность важнее безупречности.</li>
+<li>Ошибка никогда не должна замалчиваться.</li>
+<li>Если только вы сами этого не захотите.</li>
+<li>Встретив двусмысленность, отбрось искушение угадать.</li>
+<li>Должен существовать один и, желательно, только один очевидный способ сделать что-то.</li>
+<li>Хотя он поначалу может быть и не очевиден, если вы не голландец.</li>
+<li>Сейчас лучше, чем никогда.</li>
+<li>Хотя никогда зачастую лучше, чем прямо сейчас.</li>
+<li>Если реализацию сложно объяснить — идея плоха.</li>
+<li>Если реализацию легко объяснить — идея, возможно, хороша.</li>
+<li>Пространства имён — отличная штука! Будем делать их больше!</li>
+</ul>
+</div>
+<div id="ваш-первый-код-на-python" class="section level2">
+<h2><span class="header-section-number">1.4</span> Ваш первый код на Python</h2>
+<p>Самая простая операция в Python — это вывод на экран.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="bu">print</span>(<span class="st">&#39;Привет, Мир!&#39;</span>)</a></code></pre></div>
+<pre><code>## Привет, Мир!</code></pre>
+<p>Разберёмся, что здесь написано.</p>
+<p><code>print()</code> — это встроенная в Python подпрограмма для вывода на экран (или для «печати на экране» на жаргоне программистов). У программистов есть специальное название для подпрограмм определённого действия — «<strong><em>функция</em></strong>».</p>
+<p><code>'Привет, Мир!'</code> — это текст, который функция <code>print()</code> напечатает. Функция <code>print()</code> выводит на экран любые переданные в неё данные. Программисты называют такие данные «<strong><em>аргументы</em></strong>», или «<strong><em>параметры</em></strong>». Они перечисляются после имени функции в скобках.</p>
+<p>Говорят, что аргументы <strong><em>передаются</em></strong> в функцию, а функция их <strong><em>принимает</em></strong>. Когда вы пишете имя функции со скобками, вы её <strong><em>вызываете</em></strong>.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="co"># приветствие миру — традиционная первая строка в освоении нового языка</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="bu">print</span>(<span class="st">&#39;Привет, Мир!&#39;</span>)</a>
+<a class="sourceLine" id="cb5-3" title="3"></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="co"># в программе написан вызов функции print() с аргументом &#39;Привет, Мир!&#39;</span></a></code></pre></div>
+<pre><code>## Привет, Мир!</code></pre>
+<p>Строчка, начинающаяся с символа <code>#</code> — это <strong><em>комментарий</em></strong>, примечание для разработчика. Python игнорирует любые символы на строчке после <code>#</code>, не считая их кодом. Этот текст предназначен вам. Читайте комментарии, в них будут инструкции для вас.</p>
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-6" class="exercise"><strong>Упражнение 1.2  </strong></span>
+</div>
+
+<p>Сейчас вы начинаете создавать собственного персонального помощника вроде Алисы, Google Assistant, Siri, Alexa. Назовём её <strong><em>Анфиса</em></strong> :)
+Научите вашего персонального помощника Анфису здороваться.</p>
+
+<div class="solution">
+ <span class="solution"><em>Решение: </em></span> 
+</div>
+
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="co"># Вызовите функцию print() с аргументом &#39;Привет, я Анфиса!&#39;</span></a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="co"># Впишите код вызова под этой строчкой:</span></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="bu">print</span>(<span class="st">&#39;Привет, я Анфиса!&#39;</span>)</a></code></pre></div>
+<pre><code>## Привет, я Анфиса!</code></pre>
+</div>
+<div id="переменные-и-типы" class="section level2">
+<h2><span class="header-section-number">1.5</span> Переменные и типы</h2>
+<p>Окей, вы научились выводить строки на экран. Но пока только выводить.</p>
+<p>Представьте: вы читаете книгу, но не можете запомнить, сколько страниц прочли. Умеете читать, но вот запомнить номер страницы не удаётся. Вылетает из головы, где вы остановились, поэтому приходится отсчитывать страницы от начала книги. 10, 24, 140, 250 страниц — каждый раз как в первый.</p>
+<p><img src="img/1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Так же беспомощны программы, которые не могут сохранять и изменять данные. Именно поэтому настоящее программирование начинается с переменных, запоминающих результаты промежуточных действий.</p>
+<p><strong><em>Переменная</em></strong> работает как подписанная коробка или помеченная ячейка, куда можно что-то положить и не потерять.</p>
+<p>Когда вы первый раз записываете имя переменной, это называется <strong><em>объявление</em></strong>. В Python переменную всегда объявляют, присваивая ей какое-нибудь значение. Достаточно просто ввести имя, поставить знак равенства <code>=</code> (называется <strong><em>оператор присваивания</em></strong>) и написать значение, которое будет храниться в переменной.</p>
+<p>Вернёмся к чтению. Отложив программирование и ночной сон, вы прочли 210 страниц. Теперь можно сказать:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">pages <span class="op">=</span> <span class="dv">210</span></a></code></pre></div>
+<p>В коробку с именем <code>pages</code> вы положили значение <code>210</code>.
+Строка <code>'Привет, Мир!'</code> из прошлого урока — это тоже пример данных, которые могут храниться в памяти компьютера.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="co"># объявили переменную message и присвоили ей значение: строку &#39;Привет, Мир!&#39;</span></a>
+<a class="sourceLine" id="cb10-2" title="2">message <span class="op">=</span> <span class="st">&#39;Привет, Мир!&#39;</span></a></code></pre></div>
+<p>Теперь, если в программе написать имя переменной, подставится её значение:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="co"># объявили переменную message и присвоили ей значение: строку &#39;Привет, Мир!&#39;</span></a>
+<a class="sourceLine" id="cb11-2" title="2">message <span class="op">=</span> <span class="st">&#39;Привет, Мир!&#39;</span></a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="bu">print</span>(message)</a></code></pre></div>
+<p>И на экране будет напечатано</p>
+<pre><code>## Привет, Мир!</code></pre>
+<p>Значения переменных отличаются по своей сути. Вы только что увидели, что они бывают числами или строками. Это разные <strong><em>типы данных</em></strong>. В Python встречаются не только числа и строки, но пока хватит и этих двух типов.</p>
+<p><strong><em>Строка</em></strong> записывается как символ или набор символов внутри <code>'одинарных'</code> либо <code>"двойных"</code> кавычек. Обратите внимание: в редакторе кода числа и строки выделяются разными цветами, чтобы читать исходный код было легче.</p>
+<p>Со значениями разных типов операторы языка Python могут работать неодинаково. Например, оператор <code>+</code> ведёт себя по-разному в зависимости от типа данных: числа он складывает, а строки — объединяет:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="bu">print</span>(<span class="st">&#39;Сколько &#39;</span> <span class="op">+</span> <span class="st">&#39;вы &#39;</span> <span class="op">+</span> <span class="st">&#39;прочли?&#39;</span>)</a>
+<a class="sourceLine" id="cb13-2" title="2"></a>
+<a class="sourceLine" id="cb13-3" title="3">pages <span class="op">=</span> <span class="dv">210</span></a>
+<a class="sourceLine" id="cb13-4" title="4">today <span class="op">=</span> <span class="dv">42</span></a>
+<a class="sourceLine" id="cb13-5" title="5">total <span class="op">=</span> pages <span class="op">+</span> today</a>
+<a class="sourceLine" id="cb13-6" title="6"></a>
+<a class="sourceLine" id="cb13-7" title="7"><span class="bu">print</span>(total)</a></code></pre></div>
+<pre><code>## Сколько вы прочли?</code></pre>
+<pre><code>## 252</code></pre>
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-16" class="exercise"><strong>Упражнение 1.3  </strong></span>
+</div>
+
+<p>Чтобы Анфиса стала искренней и дружелюбней, научим её рассказывать о себе. Для начала напечатайте на экран фразу <code>'Привет, я Анфиса, твой персональный помощник!'</code>, подставляя переменные <code>name</code> и <code>job</code>.</p>
+
+<div class="solution">
+ <span class="solution"><em>Решение: </em></span> 
+</div>
+
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1">name <span class="op">=</span> <span class="st">&#39;Анфиса&#39;</span>                <span class="co"># имя</span></a>
+<a class="sourceLine" id="cb16-2" title="2">job <span class="op">=</span> <span class="st">&#39;персональный помощник&#39;</span>  <span class="co"># профессия</span></a>
+<a class="sourceLine" id="cb16-3" title="3"></a>
+<a class="sourceLine" id="cb16-4" title="4"><span class="co"># допишите ваш код ниже вместо многоточия:</span></a>
+<a class="sourceLine" id="cb16-5" title="5"><span class="bu">print</span>(<span class="st">&#39;Привет, я &#39;</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">&#39;, твой &#39;</span> <span class="op">+</span> job <span class="op">+</span> <span class="st">&#39;!&#39;</span>)</a></code></pre></div>
+<pre><code>## Привет, я Анфиса, твой персональный помощник!</code></pre>
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-19" class="exercise"><strong>Упражнение 1.4  </strong></span>
+</div>
+
+<p>Если Анфиса поселится в фитнес-трекере, она сможет считать количество шагов пользователя. Научите Анфису подставлять в сообщение сумму шагов, пройденных за два дня.</p>
+<p>В переменных <code>steps_today</code> и <code>steps_yesterday</code> записано, сколько шагов прошёл незнакомый вам Геннадий вчера и сегодня. Напечатайте на экран ответ на вопрос <code>Сколько шагов сделал Геннадий за два дня</code>?</p>
+
+<div class="solution">
+ <span class="solution"><em>Решение: </em></span> 
+</div>
+
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1">steps_today <span class="op">=</span> <span class="dv">6783</span></a>
+<a class="sourceLine" id="cb18-2" title="2">steps_yesterday <span class="op">=</span> <span class="dv">8452</span></a>
+<a class="sourceLine" id="cb18-3" title="3"></a>
+<a class="sourceLine" id="cb18-4" title="4">steps_sum <span class="op">=</span> steps_today <span class="op">+</span> steps_yesterday  <span class="co"># вычислите сумму здесь</span></a>
+<a class="sourceLine" id="cb18-5" title="5"></a>
+<a class="sourceLine" id="cb18-6" title="6"><span class="bu">print</span>(<span class="st">&#39;Сколько шагов сделал Геннадий за два дня?&#39;</span>)</a></code></pre></div>
+<pre><code>## Сколько шагов сделал Геннадий за два дня?</code></pre>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="bu">print</span>(steps_sum)</a></code></pre></div>
+<pre><code>## 15235</code></pre>
+</div>
+<div id="преобразование-типов" class="section level2">
+<h2><span class="header-section-number">1.6</span> Преобразование типов</h2>
+<p>Вспомним прошлый урок: со значениями разных типов операторы языка Python работают по-разному:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1">one_hundred <span class="op">=</span> <span class="dv">100</span></a>
+<a class="sourceLine" id="cb22-2" title="2">five_hundred <span class="op">=</span> <span class="dv">500</span></a>
+<a class="sourceLine" id="cb22-3" title="3"><span class="bu">print</span>(one_hundred <span class="op">+</span> five_hundred)</a></code></pre></div>
+<pre><code>## 600</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1">a <span class="op">=</span> <span class="st">&#39;ха&#39;</span></a>
+<a class="sourceLine" id="cb24-2" title="2"><span class="bu">print</span>(a <span class="op">+</span> a <span class="op">+</span> a <span class="op">+</span> a)</a></code></pre></div>
+<pre><code>## хахахаха</code></pre>
+<p>Такое поведение операторов приходится учитывать:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1"><span class="co"># объявили две переменные разных типов</span></a>
+<a class="sourceLine" id="cb26-2" title="2">number <span class="op">=</span> <span class="dv">100</span></a>
+<a class="sourceLine" id="cb26-3" title="3">rubles <span class="op">=</span> <span class="st">&quot; рублей&quot;</span></a>
+<a class="sourceLine" id="cb26-4" title="4"><span class="co"># и вот такой код не сработает</span></a>
+<a class="sourceLine" id="cb26-5" title="5"><span class="bu">print</span>(number <span class="op">+</span> rubles)</a>
+<a class="sourceLine" id="cb26-6" title="6"><span class="co"># в тексте ошибки сказано, что оператор + не складывает целые числа со строками</span></a></code></pre></div>
+<pre><code>## Error in py_call_impl(callable, dots$args, dots$keywords): TypeError: unsupported operand type(s) for +: &#39;int&#39; and &#39;str&#39;
+## 
+## Detailed traceback: 
+##   File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;</code></pre>
+<p>Не беда: Python позволяет перевести значение переменной из одного типа в другой (<strong><em>конвертировать тип данных</em></strong>). Преобразованием занимаются специальные функции. Так, для превращения числа в строку вызывают функцию <code>str()</code>:</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1"><span class="co"># код, где число преобразовано в строку, &quot;приведено к строке&quot;, прекрасно работает</span></a>
+<a class="sourceLine" id="cb28-2" title="2"><span class="bu">print</span>(<span class="bu">str</span>(number) <span class="op">+</span> rubles)</a></code></pre></div>
+<pre><code>## 100 рублей</code></pre>
+<p>А обратно из строки в целое число можно преобразовать, вызывая функцию <code>int()</code>.</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb30-1" title="1"><span class="co"># есть строки &#39;100&#39; и &#39;500&#39;; хотим число 600</span></a>
+<a class="sourceLine" id="cb30-2" title="2">one_hundred <span class="op">=</span> <span class="st">&#39;100&#39;</span></a>
+<a class="sourceLine" id="cb30-3" title="3">five_hundred <span class="op">=</span> <span class="st">&#39;500&#39;</span></a>
+<a class="sourceLine" id="cb30-4" title="4"><span class="bu">print</span>(one_hundred <span class="op">+</span> five_hundred)</a></code></pre></div>
+<pre><code>## 100500</code></pre>
+<p>Стопятьсот? Не то.</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb32-1" title="1"><span class="co"># есть строки &#39;100&#39; и &#39;500&#39;; хотим число 600</span></a>
+<a class="sourceLine" id="cb32-2" title="2"><span class="co"># а мы всё же хотим получить число 600 — поэтому преобразуем</span></a>
+<a class="sourceLine" id="cb32-3" title="3"><span class="bu">print</span>(<span class="bu">int</span>(one_hundred) <span class="op">+</span> <span class="bu">int</span>(five_hundred))</a></code></pre></div>
+<pre><code>## 600</code></pre>
+<p>Да, так гораздо лучше. А вот строку <code>"шестьсот"</code> таким образом конвертировать в число не получится, надо искать другой способ.</p>
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-27" class="exercise"><strong>Упражнение 1.5  </strong></span>
+</div>
+
+<p>Научим Анфису информировать вас о новых сообщениях, которые вы могли бы получить.</p>
+<p>Выведите на экран строку <code>'У вас 8 новых сообщений'</code>, составленную из строки <code>'У вас '</code>, значения переменной <code>count</code> и строки <code>' новых сообщений'</code>.</p>
+
+<div class="solution">
+ <span class="solution"><em>Решение: </em></span> 
+</div>
+
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb34-1" title="1">count <span class="op">=</span> <span class="dv">8</span></a>
+<a class="sourceLine" id="cb34-2" title="2">message <span class="op">=</span> <span class="st">&quot;У вас &quot;</span> <span class="op">+</span> <span class="bu">str</span>(count) <span class="op">+</span> <span class="st">&quot; новых сообщений&quot;</span>  <span class="co"># допишите ваш код здесь</span></a>
+<a class="sourceLine" id="cb34-3" title="3"><span class="bu">print</span>(message)</a></code></pre></div>
+<pre><code>## У вас 8 новых сообщений</code></pre>
+</div>
+<div id="ошибки" class="section level2">
+<h2><span class="header-section-number">1.7</span> Ошибки</h2>
+<p>Попробуем выполнить такую программу:</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb36-1" title="1">one_hundred <span class="op">=</span> <span class="dv">100</span></a>
+<a class="sourceLine" id="cb36-2" title="2"><span class="bu">print</span>(one_hunred)</a></code></pre></div>
+<p>Ой, что это?</p>
+<pre><code>Traceback (most recent call last):
+  File &quot;main.py&quot;, line 2, in &lt;module&gt;
+    print(one_hunred)
+NameError: name &#39;one_hunred&#39; is not defined</code></pre>
+<p>Во второй строке допущена опечатка: в имени переменной пропущена буква “<em>d</em>”. Python споткнулся о неизвестное имя переменной и выдал сообщение об ошибке, с такими подробностями:</p>
+<ul>
+<li>в какой строчке кода обнаружена ошибка: <code>line 2</code>;</li>
+<li>тип ошибки: <code>NameError</code>;</li>
+<li>из-за чего произошла ошибка: <code>name 'one_hunred' is not defined</code> (никаких сущностей с именем one_hunred ещё не объявлялось).</li>
+</ul>
+<p>Чтобы программа заработала, поправим опечатку:</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb38-1" title="1">one_hundred <span class="op">=</span> <span class="dv">100</span></a>
+<a class="sourceLine" id="cb38-2" title="2"><span class="bu">print</span>(one_hundred)</a></code></pre></div>
+<pre><code>## 100</code></pre>
+<p>Ошибки — это нормально. С ними сталкиваются все разработчики. Поэтому важно научиться понимать, в чём ошибка, и её исправлять. Разберём ещё несколько распространённых ошибок.</p>
+<p>Например, при сложении забыли написать одно слагаемое. Получаем синтаксическую ошибку, сообщение <strong><em>SyntaxError</em></strong>:</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb40-1" title="1"><span class="co"># print(3 + )</span></a></code></pre></div>
+<pre><code>File &quot;main.py&quot;, line 1
+   print(3 + )
+             ^
+SyntaxError: invalid syntax</code></pre>
+<p>Сообщение <em>invalid syntax</em> переводится как «недопустимый синтаксис». Другую ошибку <strong><em>SyntaxError</em></strong> можно получить, если забыть скобку или кавычку:</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb42-1" title="1"><span class="co"># print(3 + 5</span></a></code></pre></div>
+<pre><code>File &quot;main.py&quot;, line 2       
+              ^
+SyntaxError: unexpected EOF while parsing</code></pre>
+<p>EOF – сокращение для <em>end of file</em>, а всё сообщение «unexpected EOF while parsing» переводится как «неожиданный конец файла во время разбора кода программы». Python увидел начало вызова функции, но внезапно код программы закончился.</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb44-1" title="1"><span class="co"># print(&#39;Привет!)</span></a></code></pre></div>
+<pre><code>   File &quot;main.py&quot;, line 1
+   print(&#39;Привет!)
+                  ^
+SyntaxError: EOL while scanning string literal</code></pre>
+<p>EOL – сокращение для <em>end of line</em>, а всё сообщение «EOL while scanning string literal» переводится как «конец строчки во время обработки текста». Python увидел открывающую кавычку, но строчка закончилась, а закрывающей кавычки не было.</p>
+<p><strong>Право на ошибку</strong></p>
+<p>Большýю часть времени разработчик тратит на поиск и исправление ошибок. Их будет много, относитесь к ним как к задаче, а не как к проблеме или беде. Если код не заработал сразу — это нормально, так и должно быть.</p>
+<p>Пишите код без опаски. В нём обязательно будут баги, но вы обязательно их отловите. Если не получится — мы поможем.</p>
+</div>
+<div id="именование-переменных" class="section level2">
+<h2><span class="header-section-number">1.8</span> Именование переменных</h2>
+<p>В именах переменных используйте только латинский алфавит, цифры и подчеркивание. Остальные символы, в том числе буквы кириллицы, могут привести к ошибкам. Они создают путаницу: например, английская <em>x</em> и русская <em>х</em> выглядят одинаково.</p>
+<p>Если название состоит из нескольких слов, разделяйте их символом нижнего подчёркивания: <code>new_message</code>. Такой стиль написания называется <code>snake case</code>, потому что слова могут получаться <em>очень_длинные_как_змея_или_даже_как_две</em>.</p>
+<p>Python допускает использование цифр в именах переменных, но не на первой позиции:</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb46-1" title="1">snake1 <span class="op">=</span> <span class="st">&quot;питон&quot;</span></a>
+<a class="sourceLine" id="cb46-2" title="2">snake2 <span class="op">=</span> <span class="st">&quot;удав&quot;</span></a>
+<a class="sourceLine" id="cb46-3" title="3">long_snake <span class="op">=</span> <span class="st">&quot;длинный змей&quot;</span></a>
+<a class="sourceLine" id="cb46-4" title="4"><span class="bu">print</span>(long_snake <span class="op">+</span> <span class="st">&quot; — это может быть &quot;</span> <span class="op">+</span> snake1 <span class="op">+</span> <span class="st">&quot; или &quot;</span> <span class="op">+</span> snake2)</a></code></pre></div>
+<pre><code>## длинный змей — это может быть питон или удав</code></pre>
+<p><strong>Важно</strong></p>
+<p>Как выбрать имя переменной?</p>
+<p>Составляйте названия переменных из английских слов. Когда ваша программа вырастет до многих сотен строк, названия-слова помогут быстро сориентироваться в коде.</p>
+<p>Сравните сами: переменную с названием урока можно назвать буквой <code>l</code>, а можно — словом <code>lesson.</code> Второй вариант лучше: ведь то, что когда-то разработчик сократил <code>lesson</code> до одной буквы, со временем забудут и он, и его коллеги. Код станет сложнее для чтения.</p>
+<p>Не рекомендуется использовать русские слова в английской раскладке. Рано или поздно ваш код будет читать человек, не владеющий русским. Он может не понять, что к чему. Сразу называйте переменные по-английски: <code>child</code>, а не транслитерацией — <code>rebyonok.</code></p>
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-36" class="exercise"><strong>Упражнение 1.6  </strong></span>
+</div>
+
+<p>Выберите правильные названия переменных для <code>imia</code>, <code>familia</code> и переименуйте их.
+Имя по-английски — <em>first name</em>, <em>given name</em>, <em>name</em> или <em>forename</em>.
+Фамилия по-английски — <em>last name</em>, <em>family name</em> или <em>surname</em>.</p>
+
+<div class="solution">
+ <span class="solution"><em>Решение: </em></span> 
+</div>
+
+<div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb48-1" title="1"><span class="co"># Переименуйте переменные правильно</span></a>
+<a class="sourceLine" id="cb48-2" title="2">name <span class="op">=</span> <span class="st">&#39;Данил&#39;</span>  </a>
+<a class="sourceLine" id="cb48-3" title="3">surname <span class="op">=</span> <span class="st">&#39;Марков&#39;</span></a>
+<a class="sourceLine" id="cb48-4" title="4"><span class="bu">print</span>(<span class="st">&#39;Меня зовут &#39;</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">&#39; &#39;</span> <span class="op">+</span> surname <span class="op">+</span> <span class="st">&#39;.&#39;</span>)</a></code></pre></div>
+<pre><code>## Меня зовут Данил Марков.</code></pre>
+</div>
+<div id="вывод-на-экран" class="section level2">
+<h2><span class="header-section-number">1.9</span> Вывод на экран</h2>
+<p>Вы уже умеете выводить на экран текст, складывая строки. Но можно напечатать и без оператора <code>+</code>: в скобках функции <code>print()</code> перечислите через запятую аргументы, которые она должна напечатать:</p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb50-1" title="1">weather <span class="op">=</span> <span class="st">&#39;облачно&#39;</span></a>
+<a class="sourceLine" id="cb50-2" title="2"><span class="bu">print</span>(<span class="st">&#39;На улице сейчас&#39;</span>, weather)</a></code></pre></div>
+<pre><code>## На улице сейчас облачно</code></pre>
+<p>Запятая между аргументами по умолчанию заменяется на пробел.</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb52-1" title="1"><span class="bu">print</span>(<span class="st">&#39;За&#39;</span>, <span class="st">&#39;окном&#39;</span>, <span class="st">&#39;метель&#39;</span>)</a></code></pre></div>
+<pre><code>## За окном метель</code></pre>
+<p>Это значит, что в сообщения Анфисы можно не добавлять пробелы, когда вы составляете сложную фразу. Достаточно разделить аргументы функции <code>print()</code> запятой. И, что приятно, количество этих аргументов не ограничено:</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb54-1" title="1">messages_count <span class="op">=</span> <span class="dv">12</span></a>
+<a class="sourceLine" id="cb54-2" title="2"><span class="bu">print</span>(<span class="st">&#39;У тебя&#39;</span>, messages_count, <span class="st">&#39;новых сообщений.&#39;</span>)</a></code></pre></div>
+<pre><code>## У тебя 12 новых сообщений.</code></pre>
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-42" class="exercise"><strong>Упражнение 1.7  </strong></span>
+</div>
+
+<p>Начнём учить Анфису разговаривать о погоде.
+Напечатайте на экран два сообщения о погоде в следующем формате:</p>
+<p><code>Сегодня ...</code></p>
+<p><code>Температура воздуха ... градусов</code></p>
+<p>Температура хранится в переменной <code>temperature</code>, а описание погоды — в переменной <code>weather.</code> Не изменяйте их значения.</p>
+
+<div class="solution">
+ <span class="solution"><em>Решение: </em></span> 
+</div>
+
+<div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb56-1" title="1">temperature <span class="op">=</span> <span class="dv">-25</span></a>
+<a class="sourceLine" id="cb56-2" title="2">weather <span class="op">=</span> <span class="st">&#39;солнечно&#39;</span></a>
+<a class="sourceLine" id="cb56-3" title="3"></a>
+<a class="sourceLine" id="cb56-4" title="4"><span class="co"># напишите ваш код ниже</span></a>
+<a class="sourceLine" id="cb56-5" title="5"><span class="bu">print</span>(<span class="st">&quot;Сегодня&quot;</span>, weather)</a></code></pre></div>
+<pre><code>## Сегодня солнечно</code></pre>
+<div class="sourceCode" id="cb58"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb58-1" title="1"><span class="bu">print</span>(<span class="st">&quot;Температура воздуха&quot;</span>, temperature, <span class="st">&quot;градусов Цельсия&quot;</span>)</a></code></pre></div>
+<pre><code>## Температура воздуха -25 градусов Цельсия</code></pre>
+</div>
+<div id="дробные-числа" class="section level2">
+<h2><span class="header-section-number">1.10</span> Дробные числа</h2>
+<p>Числа бывают целыми и дробными. Для десятичных дробей, или чисел с плавающей запятой, в Python есть специальный тип данных — <code>float</code>.</p>
+<div class="sourceCode" id="cb60"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb60-1" title="1">first <span class="op">=</span> <span class="fl">87.2</span></a>
+<a class="sourceLine" id="cb60-2" title="2">second <span class="op">=</span> <span class="fl">50.2</span></a>
+<a class="sourceLine" id="cb60-3" title="3">third <span class="op">=</span> <span class="fl">50.242</span></a>
+<a class="sourceLine" id="cb60-4" title="4"><span class="bu">print</span>(first <span class="op">+</span> second <span class="op">+</span> third)</a></code></pre></div>
+<pre><code>## 187.642</code></pre>
+<p>Дробные числа, как и целые, преобразуют к строкам вызовом функции <code>str()</code>:</p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb62-1" title="1">first <span class="op">=</span> <span class="fl">87.2</span></a>
+<a class="sourceLine" id="cb62-2" title="2">second <span class="op">=</span> <span class="fl">50.2</span></a>
+<a class="sourceLine" id="cb62-3" title="3">third <span class="op">=</span> <span class="fl">50.242</span></a>
+<a class="sourceLine" id="cb62-4" title="4"><span class="bu">print</span>(<span class="bu">str</span>(first) <span class="op">+</span> <span class="bu">str</span>(second) <span class="op">+</span> <span class="bu">str</span>(third))</a></code></pre></div>
+<pre><code>## 87.250.250.242</code></pre>
+<p>Такой похожий код — и такой разный результат! Превратив числа в строки, мы получили один из IP-адресов серверов Яндекса ya.ru.</p>
+<p><img src="img/2.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Можно и наоборот. Преобразуем строки в числа функцией float():
+first = ‘87.2’ # строка
+second = ‘50.2’ # тоже строка
+third = ‘50.242’ # и это строка
+print(float(first) + float(second) + float(third)) # а в итоге получится число!
+187.642
+Дробные числа приводят к целым функцией int(). Обратите внимание, что она не округляет числа по правилам арифметики, а лишь отбрасывает дробную часть.
+# округление вниз, как вы привыкли
+int(3.14)
+3
+# а здесь всё равно округление вниз, хотя вроде бы так быть не должно
+int(2.72)
+2
+int(-3.14)
+-3
+int(-2.72)
+-2
+Также можно сделать несколько преобразований в одной строчке. Попробуем сначала сделать дробь целым числом, а затем преобразовать ее в строку:
+fraction = 1.5 # дробь
+print(“Целая часть =” + str(int(fraction)))
+# вернётся строка, представляющая собой целочисленную часть дроби
+Целая часть = 1
+Обратите внимание: чтобы не сбиться в количестве скобок (закрывающих должно быть столько же, сколько и открывающих), в тренажёре пары скобок подсвечиваются, когда рядом оказывается курсор:
+image
+Интересно: что значит «плавающая запятая» и куда она плывет?
+Грубо говоря, дробные числа называются «числами с плавающей запятой», потому что запятая «плавает» по числу, когда его представляют в виде произведения значащей части и степени. Например, число 3,14159 можно записать следующим образом:
+314,159*10<sup>(-2)
+0,0314159<em>10^(2)
+314159,0</em>10</sup>(-5)
+В англоязычной литературе запятая называется точкой, floating point, потому что принято писать десятичные дроби через точку.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="diving-in.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection",
+"toolbar": {
+"position": "fixed",
+"edit": null,
+"download": null,
+"search": true,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"info": null
+}
+}
+});
+});
+</script>
+
+</body>
+
+</html>
