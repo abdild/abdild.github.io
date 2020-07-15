@@ -134,6 +134,14 @@ $$К_{эф}=\frac{Э_{ср.вз}}{km},$$
 
 **Метрики** - от английского *metrics* — стандартные единицы измерения. Система измерений представляет собой специальные расчеты, которые помогают интерпретировать полученные данные, соотнося их с предыдущими результатами.
 
+### Как выбрать HR-метрики (видео)
+
+<div style="position: relative; padding: 0 0 56.25% 0; height:0; overflow:hidden;">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TPTcyY-jWTc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+
+</div>
+
 ### Рекрутмент
 
 #### Время на закрытие вакансии
