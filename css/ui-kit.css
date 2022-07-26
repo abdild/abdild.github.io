@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+/****************************************************************************************************/
+/* ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ */
+/****************************************************************************************************/
+:root {
+  --unit: 1rem; /* 1rem = 16px */
+  --radius: 5px;
+  --border: 1.7px;
+
+  /***************************************************************************/
+  /* ЦВЕТ
+  /***************************************************************************/
+
+  --color-primary: #0084ca;
+  --color-secondary: #b8d02f;
+  --color-tertiary: #8f3e97;
+  --color-info: #0078d2;
+  --color-success: #09b37b;
+  --color-warning: #eb6d00;
+  --color-error: #eb3333;
+  --color-critical: #831843;
+  --color-dark: #002033;
+  --color-gray: #cbd5e1;
+  --color-light: #f8fafc;
+
+  --color-info-light: #56b9f250;
+  --color-success-light: #22c38e50;
+  --color-warning-light: #f38b0050;
+  --color-error-light: #eb575750;
+  --color-critical-light: #9f123950;
+
+  --color--bg-stripe: #00416620; /* Цвет для едва заметного разделения. Например, чтобы разделить строки в таблицах */
+  --color--bg-tone: rgba(
+    0,
+    32,
+    51,
+    0.85
+  ); /* Цвет, затемняющий подложки (оверлея) под всплывающими окнами */
+  --color--bg-soft: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Цвет, высветляющий подложки (оверлея) под всплывающими окнами */
+  --color--bg-border: rgba(
+    0,
+    65,
+    102,
+    0.2
+  ); /* Цвет для большинства бордеров и тонких разделителей */
+  --color--bg-ghost: rgba(
+    0,
+    32,
+    51,
+    0.08
+  ); /* Для дополнительного выделения или разделения блоков или секций. Обычно используется поверх основных фонов (default или secondary) */
+  --color--bg-shadow: #002033; /* Цвет тени */
+}
+
+/****************************************************************************************************/
+/* ЦВЕТА */
+/****************************************************************************************************/
+.ai-text-primary {
+  color: var(--color-primary);
+}
+.ai-text-secondary {
+  color: var(--color-secondary);
+}
+.ai-text-tertiary {
+  color: var(--color-tertiary);
+}
+.ai-text-info {
+  color: var(--color-info);
+}
+.ai-text-success {
+  color: var(--color-success);
+}
+.ai-text-warning {
+  color: var(--color-warning);
+}
+.ai-text-error {
+  color: var(--color-error);
+}
+.ai-text-critical {
+  color: var(--color-critical);
+}
+.ai-text-dark {
+  color: var(--color-dark);
+}
+.ai-text-gray {
+  color: var(--color-gray);
+}
+.ai-text-light {
+  color: var(--color-light);
+}
+.ai-text-white {
+  color: #ffffff;
+}
+
+.ai-bg-primary {
+  background-color: var(--color-primary);
+  /* border: var(--border) solid var(--color-primary); */
+}
+.ai-bg-secondary {
+  background-color: var(--color-secondary);
+  /* border: var(--border) solid var(--color-secondary); */
+}
+.ai-bg-tertiary {
+  background-color: var(--color-tertiary);
+  /* border: var(--border) solid var(--color-tertiary); */
+}
+.ai-bg-info {
+  background-color: var(--color-info-light);
+  /* border: var(--border) solid var(--color-info-light); */
+}
+.ai-bg-success {
+  background-color: var(--color-success-light);
+  /* border: var(--border) solid var(--color-success-light); */
+}
+.ai-bg-warning {
+  background-color: var(--color-warning-light);
+  /* border: var(--border) solid var(--color-warning-light); */
+}
+.ai-bg-error {
+  background-color: var(--color-error-light);
+  /* border: var(--border) solid var(--color-error-light); */
+}
+.ai-bg-critical {
+  background-color: var(--color-critical-light);
+  /* border: var(--border) solid var(--color-critical-light); */
+}
+.ai-bg-dark {
+  background-color: var(--color-dark);
+  /* border: var(--border) solid var(--color-dark); */
+}
+.ai-bg-gray {
+  background-color: var(--color-gray);
+  /* border: var(--border) solid var(--color-gray); */
+}
+.ai-bg-light {
+  background-color: var(--color-light);
+  /* border: var(--border) solid var(--color-light); */
+}
+.ai-bg-white {
+  background-color: #ffffff;
+  /* border: var(--border) solid #ffffff; */
+}
+
+.ai-text-primary svg path {
+  stroke: var(--color-primary);
+}
+.ai-text-secondary svg path {
+  stroke: var(--color-secondary);
+}
+.ai-text-tertiary svg path {
+  stroke: var(--color-tertiary);
+}
+.ai-text-info svg path {
+  stroke: var(--color-info);
+}
+.ai-text-success svg path {
+  stroke: var(--color-success);
+}
+.ai-text-warning svg path {
+  stroke: var(--color-warning);
+}
+.ai-text-error svg path {
+  stroke: var(--color-error);
+}
+.ai-text-critical svg path {
+  stroke: var(--color-critical);
+}
+.ai-text-dark svg path {
+  stroke: var(--color-dark);
+}
+.ai-text-gray svg path {
+  stroke: var(--color-gray);
+}
+.ai-text-light svg path {
+  stroke: var(--color-light);
+}
+.ai-text-white svg path {
+  stroke: #ffffff;
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+}
+
+/****************************************************************************************************/
+/* СТИЛИ */
+/****************************************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  letter-spacing: 0.24px;
+  color: var(--color-dark);
+}
+
+body {
+  background-color: var(--color-light);
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: var(--color-info);
+}
+
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: var(--color-info);
+}
+
+.ai-logo {
+  height: 32px;
+}
+
+.rounded {
+  border-radius: 100px !important;
+}
+
+.content-container.grid-xl {
+  padding: 150px 24px;
+}
+
+.ai-h-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ai-v-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/****************************************************************************************************/
+/* Шапка */
+/****************************************************************************************************/
+.main_header {
+  position: fixed;
+  top: 0px;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+}
+
+.additional_top_menu {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.additional_top_menu a {
+  color: var(--color--typo-secondary);
+}
+
+/****************************************************************************************************/
+/* Текст */
+/****************************************************************************************************/
+.ai-title-primary {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.374px;
+  margin-bottom: 24px;
+}
+
+.ai-title-secondary {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.35px;
+  margin-bottom: 20px;
+}
+
+.ai-title-tertiary {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.24px;
+  margin-bottom: 10px;
+}
+
+.ai-text-lg {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.24px;
+}
+
+.ai-text-sm {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.24px;
+  font-weight: 400;
+}
+
+.ai-text-mc {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.34px;
+  font-weight: 400;
+}
+
+.ai-text-bold {
+  font-weight: 500;
+}
+
+.ai-text-caps {
+  text-transform: uppercase;
+}
+
+.ai-text-italic {
+  font-style: italic;
+}
+
+/****************************************************************************************************/
+/* Иконки */
+/****************************************************************************************************/
+.ai-icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 2px;
+  position: relative;
+  margin: 0 -4px;
+}
+
+.ai-vert-icon {
+  min-width: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.ai-vert-icon:hover {
+  color: inherit !important;
+}
+
+svg {
+  height: 20px;
+}
+svg path {
+  stroke-width: 1.5;
+}
+
+/* .ai-icon svg {height: 20px;}
+.ai-icon svg path {stroke-width: 1.2;} */
+
+.text-lg svg {
+  height: 22px;
+}
+.text-lg svg path {
+  stroke-width: 1.5;
+}
+.text-sm svg {
+  height: 20px;
+}
+.text-sm svg path {
+  stroke-width: 1.2;
+}
+.text-mc svg {
+  height: 18px;
+}
+.text-mc svg path {
+  stroke-width: 1;
+}
+
+/****************************************************************************************************/
+/* КНОПКИ */
+/****************************************************************************************************/
+.btn {
+  font-size: 14px;
+  font-weight: 300;
+  border: 1.8px solid transparent;
+  text-decoration: none;
+  padding-left: 8px !important;
+  padding-right: 12px !important;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  font-weight: 400;
+}
+
+.btn-lg {
+  font-size: 16px !important;
+  padding-left: 10px !important;
+  padding-right: 14px !important;
+}
+
+.btn-sm {
+  font-size: 12px !important;
+  font-weight: 400;
+  padding-left: 6px !important;
+  padding-right: 10px !important;
+}
+
+.ai-btn:focus,
+.ai-btn:hover,
+.ai-btn:active {
+  background: var(--color-white);
+  color: var(--color-primary);
+  border: 1.8px solid var(--color-primary);
+  text-decoration: none;
+}
+
+.ai-btn:focus svg path,
+.ai-btn:hover svg path,
+.ai-btn:active svg path {
+  stroke: var(--color-primary);
+}
+
+.btn-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.btn-lg svg {
+  height: 22px;
+}
+.btn-sm svg {
+  height: 18px;
+}
+
+/****************************************************************************************************/
+/* Формы */
+/****************************************************************************************************/
+.input-group .btn, .input-group .btn:hover {
+  border-color: var(--color-primary);
+}
+
+.form-input {
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+}
+
+/****************************************************************************************************/
+/* Карточки */
+/****************************************************************************************************/
+.card {
+  background: #ffffff; /* F2F3F5 */
+  border: 1px solid #f2f3f5;
+  box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+  border-radius: var(--radius);
+}
+
+.card-image img {
+  object-fit: cover;
+}
+
+.img-responsive {
+  height: 250px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-body {
+  /*margin: 0; /* Убираем внешний отступ */
+  -webkit-line-clamp: 2; /* Число отображаемых строк */
+  display: -webkit-box; /* Включаем флексбоксы */
+  -webkit-box-orient: vertical; /* Вертикальная ориентация */
+  overflow: hidden; /* Обрезаем всё за пределами блока */
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+}
+
+/****************************************************************************************************/
+/* ПЕРЕОПРЕДЕЛЯЕМЫЕ КЛАССЫ LG */
+/****************************************************************************************************/
+.breadcrumb-item {
+  height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
