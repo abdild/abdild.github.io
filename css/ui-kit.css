@@ -6,7 +6,7 @@
 :root {
   --unit: 1rem; /* 1rem = 16px */
   --radius: 5px;
-  --border: 1.7px;
+  --border: 1.8px;
 
   /***************************************************************************/
   /* ЦВЕТ
@@ -21,7 +21,7 @@
   --color-error: #eb3333;
   --color-critical: #831843;
   --color-dark: #002033;
-  --color-gray: #cbd5e1;
+  --color-gray: #7d818e;
   --color-light: #f8fafc;
 
   --color-info-light: #56b9f250;
@@ -210,19 +210,36 @@ body {
   background-color: var(--color-light);
 }
 
+:hover, :focus, :active, :visited {
+  border: none;
+  outline: none;
+}
+
 a {
   outline: none;
   text-decoration: none;
+  border: none;
   box-sizing: border-box;
-  color: var(--color-info);
+  color: var(--color-info);  
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-weight: inherit;
 }
 
 a:hover,
-a:focus {
+a:focus,
+a:active,
+a:visited {
+  border: none;
   outline: none;
   text-decoration: none;
-  box-sizing: border-box;
+  box-shadow: none;
   color: var(--color-info);
+}
+
+a.ai-text-dark {
+  color: var(--color-dark);
 }
 
 .ai-logo {
@@ -354,9 +371,9 @@ a:focus {
   gap: 2px;
 }
 
-.ai-vert-icon:hover {
+/* .ai-vert-icon:hover {
   color: inherit !important;
-}
+} */
 
 svg {
   height: 20px;
@@ -393,7 +410,7 @@ svg path {
 .btn {
   font-size: 14px;
   font-weight: 300;
-  border: 1.8px solid transparent;
+  border: var(--border) solid transparent;
   text-decoration: none;
   padding-left: 8px !important;
   padding-right: 12px !important;
@@ -419,24 +436,60 @@ svg path {
   padding-right: 10px !important;
 }
 
-.ai-btn:focus,
-.ai-btn:hover,
-.ai-btn:active {
+.btn.ai-bg-primary:focus,
+.btn.ai-bg-primary:hover,
+.btn.ai-bg-primary:active
+.btn.ai-bg-primary:visited {
   background: var(--color-white);
   color: var(--color-primary);
-  border: 1.8px solid var(--color-primary);
+  border: var(--border) solid var(--color-primary);
   text-decoration: none;
+  box-shadow: none;
 }
 
-.ai-btn:focus svg path,
-.ai-btn:hover svg path,
-.ai-btn:active svg path {
+.btn.ai-bg-primary:focus svg path,
+.btn.ai-bg-primary:hover svg path,
+.btn.ai-bg-primary:active svg path {
   stroke: var(--color-primary);
 }
 
-.btn-primary {
-  background-color: var(--color-primary) !important;
+.btn.ai-bg-secondary:focus,
+.btn.ai-bg-secondary:hover,
+.btn.ai-bg-secondary:active
+.btn.ai-bg-secondary:visited {
+  background: var(--color-white);
+  color: var(--color-secondary);
+  border: var(--border) solid var(--color-secondary);
+  text-decoration: none;
+  box-shadow: none;
 }
+
+.btn.ai-bg-secondary:focus svg path,
+.btn.ai-bg-secondary:hover svg path,
+.btn.ai-bg-secondary:active svg path {
+  stroke: var(--color-secondary);
+}
+
+.btn.ai-bg-tertiary:focus,
+.btn.ai-bg-tertiary:hover,
+.btn.ai-bg-tertiary:active
+.btn.ai-bg-tertiary:visited {
+  background: var(--color-white);
+  color: var(--color-tertiary);
+  border: var(--border) solid var(--color-tertiary);
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.btn.ai-bg-tertiary:focus svg path,
+.btn.ai-bg-tertiary:hover svg path,
+.btn.ai-bg-tertiary:active svg path {
+  stroke: var(--color-tertiary);
+}
+
+/* .btn-primary {
+  background-color: var(--color-primary) !important;
+} */
 
 .btn-lg svg {
   height: 22px;
@@ -463,18 +516,23 @@ svg path {
 .card {
   background: #ffffff; /* F2F3F5 */
   border: 1px solid #f2f3f5;
-  box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
-  border-radius: var(--radius);
+  box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);  
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
 }
 
-.card-image img {
+.card .card-image:first-child img {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  width: 100%;
+  height: 250px;
   object-fit: cover;
 }
 
-.img-responsive {
-  height: 250px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+.card-header .ai-title-tertiary {
+  margin: 0;
 }
 
 .card-body {
@@ -492,6 +550,16 @@ svg path {
   align-items: center;
   justify-content: space-between;
   background: #ffffff;
+  border-bottom-right-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+}
+
+.ai-card-group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: start;
+  row-gap: 20px;
 }
 
 /****************************************************************************************************/
