@@ -7,7 +7,7 @@ include_once('header.php');
     <h1 class="ai-title-primary">Содержание</h1>
 
     <ul>
-        <li><a href="news_landing.php">Новости (лендинг)</a></li>
+        <li><a href="news_landing.php">Новости (лендинг) НАЖМИ МЕНЯ!</a></li>
         
     </ul>
 </div>
