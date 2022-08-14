@@ -624,7 +624,7 @@ svg path {
     display: flex;
     height: 100%;
     margin-top: 0px;
-    box-shadow: 0px 4px 15px rgb(34 42 70 / 8%);
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5);
 }
 
 .container-2 {
