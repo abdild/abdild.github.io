@@ -4,242 +4,230 @@
 /* ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ */
 /****************************************************************************************************/
 :root {
-    --unit: 1rem;
-    /* 1rem = 16px */
-    --radius: 5px;
-    --border: 1.8px;
+  --unit: 1rem;
+  /* 1rem = 16px */
+  --radius: 5px;
+  --border: 1.8px;
 
-    /***************************************************************************/
-    /* ЦВЕТ
+  /***************************************************************************/
+  /* ЦВЕТ
   /***************************************************************************/
 
-    --color-primary: #0084ca;
-    --color-secondary: #b8d02f;
-    --color-tertiary: #8f3e97;
-    --color-info: #0078d2;
-    --color-success: #09b37b;
-    --color-warning: #eb6d00;
-    --color-error: #eb3333;
-    --color-critical: #831843;
-    --color-dark: #002033;
-    --color-gray: #7d818e;
-    --color-light: #f8fafc;
+  --color-primary: #0084ca;
+  --color-secondary: #b8d02f;
+  --color-tertiary: #8f3e97;
+  --color-info: #0078d2;
+  --color-success: #09b37b;
+  --color-warning: #eb6d00;
+  --color-error: #eb3333;
+  --color-critical: #831843;
+  --color-dark: #002033;
+  --color-gray: #7d818e;
+  --color-light: #f8fafc;
 
-    --color-info-light: #56b9f250;
-    --color-success-light: #22c38e50;
-    --color-warning-light: #f38b0050;
-    --color-error-light: #eb575750;
-    --color-critical-light: #9f123950;
+  --color-info-light: #56b9f250;
+  --color-success-light: #22c38e50;
+  --color-warning-light: #f38b0050;
+  --color-error-light: #eb575750;
+  --color-critical-light: #9f123950;
 
-    --color--bg-stripe: #00416620;
-    /* Цвет для едва заметного разделения. Например, чтобы разделить строки в таблицах */
-    --color--bg-tone: rgba(0,
-            32,
-            51,
-            0.85);
-    /* Цвет, затемняющий подложки (оверлея) под всплывающими окнами */
-    --color--bg-soft: rgba(255,
-            255,
-            255,
-            0.9);
-    /* Цвет, высветляющий подложки (оверлея) под всплывающими окнами */
-    --color--bg-border: rgba(0,
-            65,
-            102,
-            0.2);
-    /* Цвет для большинства бордеров и тонких разделителей */
-    --color--bg-ghost: rgba(0,
-            32,
-            51,
-            0.08);
-    /* Для дополнительного выделения или разделения блоков или секций. Обычно используется поверх основных фонов (default или secondary) */
-    --color--bg-shadow: #002033;
-    /* Цвет тени */
+  --color--bg-stripe: #00416620;
+  /* Цвет для едва заметного разделения. Например, чтобы разделить строки в таблицах */
+  --color--bg-tone: rgba(0, 32, 51, 0.85);
+  /* Цвет, затемняющий подложки (оверлея) под всплывающими окнами */
+  --color--bg-soft: rgba(255, 255, 255, 0.9);
+  /* Цвет, высветляющий подложки (оверлея) под всплывающими окнами */
+  --color--bg-border: rgba(0, 65, 102, 0.2);
+  /* Цвет для большинства бордеров и тонких разделителей */
+  --color--bg-ghost: rgba(0, 32, 51, 0.08);
+  /* Для дополнительного выделения или разделения блоков или секций. Обычно используется поверх основных фонов (default или secondary) */
+  --color--bg-shadow: #002033;
+  /* Цвет тени */
 }
 
 /****************************************************************************************************/
 /* ЦВЕТА */
 /****************************************************************************************************/
 .ai-text-primary {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .ai-text-secondary {
-    color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .ai-text-tertiary {
-    color: var(--color-tertiary);
+  color: var(--color-tertiary);
 }
 
 .ai-text-info {
-    color: var(--color-info);
+  color: var(--color-info);
 }
 
 .ai-text-success {
-    color: var(--color-success);
+  color: var(--color-success);
 }
 
 .ai-text-warning {
-    color: var(--color-warning);
+  color: var(--color-warning);
 }
 
 .ai-text-error {
-    color: var(--color-error);
+  color: var(--color-error);
 }
 
 .ai-text-critical {
-    color: var(--color-critical);
+  color: var(--color-critical);
 }
 
 .ai-text-dark {
-    color: var(--color-dark);
+  color: var(--color-dark);
 }
 
 .ai-text-gray {
-    color: var(--color-gray);
+  color: var(--color-gray);
 }
 
 .ai-text-light {
-    color: var(--color-light);
+  color: var(--color-light);
 }
 
 .ai-text-white {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .ai-bg-primary {
-    background-color: var(--color-primary);
-    /* border: var(--border) solid var(--color-primary); */
+  background-color: var(--color-primary);
+  /* border: var(--border) solid var(--color-primary); */
 }
 
 .ai-bg-secondary {
-    background-color: var(--color-secondary);
-    /* border: var(--border) solid var(--color-secondary); */
+  background-color: var(--color-secondary);
+  /* border: var(--border) solid var(--color-secondary); */
 }
 
 .ai-bg-tertiary {
-    background-color: var(--color-tertiary);
-    /* border: var(--border) solid var(--color-tertiary); */
+  background-color: var(--color-tertiary);
+  /* border: var(--border) solid var(--color-tertiary); */
 }
 
 .ai-bg-info {
-    background-color: var(--color-info-light);
-    /* border: var(--border) solid var(--color-info-light); */
+  background-color: var(--color-info-light);
+  /* border: var(--border) solid var(--color-info-light); */
 }
 
 .ai-bg-success {
-    background-color: var(--color-success-light);
-    /* border: var(--border) solid var(--color-success-light); */
+  background-color: var(--color-success-light);
+  /* border: var(--border) solid var(--color-success-light); */
 }
 
 .ai-bg-warning {
-    background-color: var(--color-warning-light);
-    /* border: var(--border) solid var(--color-warning-light); */
+  background-color: var(--color-warning-light);
+  /* border: var(--border) solid var(--color-warning-light); */
 }
 
 .ai-bg-error {
-    background-color: var(--color-error-light);
-    /* border: var(--border) solid var(--color-error-light); */
+  background-color: var(--color-error-light);
+  /* border: var(--border) solid var(--color-error-light); */
 }
 
 .ai-bg-critical {
-    background-color: var(--color-critical-light);
-    /* border: var(--border) solid var(--color-critical-light); */
+  background-color: var(--color-critical-light);
+  /* border: var(--border) solid var(--color-critical-light); */
 }
 
 .ai-bg-dark {
-    background-color: var(--color-dark);
-    /* border: var(--border) solid var(--color-dark); */
+  background-color: var(--color-dark);
+  /* border: var(--border) solid var(--color-dark); */
 }
 
 .ai-bg-gray {
-    background-color: var(--color-gray);
-    /* border: var(--border) solid var(--color-gray); */
+  background-color: var(--color-gray);
+  /* border: var(--border) solid var(--color-gray); */
 }
 
 .ai-bg-light {
-    background-color: var(--color-light);
-    /* border: var(--border) solid var(--color-light); */
+  background-color: var(--color-light);
+  /* border: var(--border) solid var(--color-light); */
 }
 
 .ai-bg-white {
-    background-color: #ffffff;
-    /* border: var(--border) solid #ffffff; */
+  background-color: #ffffff;
+  /* border: var(--border) solid #ffffff; */
 }
 
 .ai-text-primary svg path {
-    stroke: var(--color-primary);
+  stroke: var(--color-primary);
 }
 
 .ai-text-secondary svg path {
-    stroke: var(--color-secondary);
+  stroke: var(--color-secondary);
 }
 
 .ai-text-tertiary svg path {
-    stroke: var(--color-tertiary);
+  stroke: var(--color-tertiary);
 }
 
 .ai-text-info svg path {
-    stroke: var(--color-info);
+  stroke: var(--color-info);
 }
 
 .ai-text-success svg path {
-    stroke: var(--color-success);
+  stroke: var(--color-success);
 }
 
 .ai-text-warning svg path {
-    stroke: var(--color-warning);
+  stroke: var(--color-warning);
 }
 
 .ai-text-error svg path {
-    stroke: var(--color-error);
+  stroke: var(--color-error);
 }
 
 .ai-text-critical svg path {
-    stroke: var(--color-critical);
+  stroke: var(--color-critical);
 }
 
 .ai-text-dark svg path {
-    stroke: var(--color-dark);
+  stroke: var(--color-dark);
 }
 
 .ai-text-gray svg path {
-    stroke: var(--color-gray);
+  stroke: var(--color-gray);
 }
 
 .ai-text-light svg path {
-    stroke: var(--color-light);
+  stroke: var(--color-light);
 }
 
 .ai-text-white svg path {
-    stroke: #ffffff;
+  stroke: #ffffff;
 }
 
 .cube {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 /****************************************************************************************************/
 /* СТИЛИ */
 /****************************************************************************************************/
 * {
-    padding: 0;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 300;
-    letter-spacing: 0.24px;
-    color: var(--color-dark);
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  letter-spacing: 0.24px;
+  color: var(--color-dark);
 }
 
 body {
-    background-color: var(--color-light);
+  background-color: var(--color-light);
 }
 
 /* 
@@ -252,159 +240,159 @@ body {
 } */
 
 a {
-    outline: none;
-    text-decoration: none;
-    border: none;
-    box-sizing: border-box;
-    color: var(--color-info);
-    font-size: inherit;
-    line-height: inherit;
-    letter-spacing: inherit;
-    font-weight: inherit;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  color: var(--color-info);
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-weight: inherit;
 }
 
 a:hover,
 a:focus,
 a:active,
 a:visited {
-    border: none;
-    outline: none;
-    text-decoration: none;
-    box-shadow: none;
-    color: var(--color-info);
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-shadow: none;
+  color: var(--color-info);
 }
 
 a.ai-text-dark {
-    color: var(--color-dark);
+  color: var(--color-dark);
 }
 
 .ai-logo {
-    height: 32px;
+  height: 32px;
 }
 
 .rounded {
-    border-radius: 100px !important;
+  border-radius: 100px !important;
 }
 
 .content-container.grid-xl {
-    padding: 150px 24px;
+  padding: 150px 24px;
 }
 
 .ai-h-flex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .ai-v-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /****************************************************************************************************/
 /* Шапка */
 /****************************************************************************************************/
 .main_header {
-    position: fixed;
-    top: 0px;
-    display: block;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+  position: fixed;
+  top: 0px;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
 }
 
 .additional_top_menu {
-    width: 100%;
-    height: 36px;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 36px;
+  display: flex;
+  align-items: center;
 }
 
 .additional_top_menu a {
-    color: var(--color--typo-secondary);
+  color: var(--color--typo-secondary);
 }
 
 /****************************************************************************************************/
 /* Текст */
 /****************************************************************************************************/
 .ai-title-primary {
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: 0.374px;
-    margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.374px;
+  margin-bottom: 24px;
 }
 
 .ai-title-secondary {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 40px;
-    letter-spacing: 0.35px;
-    margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.35px;
+  margin-bottom: 20px;
 }
 
 .ai-title-tertiary {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 0.24px;
-    margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.24px;
+  margin-bottom: 10px;
 }
 
 .ai-text-lg {
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 0.24px;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.24px;
 }
 
 .ai-text-sm {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.24px;
-    font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.24px;
+  font-weight: 400;
 }
 
 .ai-text-mc {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.34px;
-    font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.34px;
+  font-weight: 400;
 }
 
 .ai-text-bold {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .ai-text-caps {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .ai-text-italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 /****************************************************************************************************/
 /* Иконки */
 /****************************************************************************************************/
 .ai-icon {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 2px;
-    position: relative;
-    margin: 0 -4px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 2px;
+  position: relative;
+  margin: 0 -4px;
 }
 
 .ai-vert-icon {
-    min-width: 75px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
+  min-width: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
 }
 
 /* .ai-vert-icon:hover {
@@ -412,118 +400,118 @@ a.ai-text-dark {
 } */
 
 svg {
-    height: 20px;
+  height: 20px;
 }
 
 svg path {
-    stroke-width: 1.5;
+  stroke-width: 1.5;
 }
 
 /* .ai-icon svg {height: 20px;}
 .ai-icon svg path {stroke-width: 1.2;} */
 
 .text-lg svg {
-    height: 22px;
+  height: 22px;
 }
 
 .text-lg svg path {
-    stroke-width: 1.5;
+  stroke-width: 1.5;
 }
 
 .text-sm svg {
-    height: 20px;
+  height: 20px;
 }
 
 .text-sm svg path {
-    stroke-width: 1.2;
+  stroke-width: 1.2;
 }
 
 .text-mc svg {
-    height: 18px;
+  height: 18px;
 }
 
 .text-mc svg path {
-    stroke-width: 1;
+  stroke-width: 1;
 }
 
 /****************************************************************************************************/
 /* КНОПКИ */
 /****************************************************************************************************/
 .btn {
-    font-size: 14px;
-    font-weight: 300;
-    border: var(--border) solid transparent;
-    text-decoration: none;
-    padding-left: 8px !important;
-    padding-right: 12px !important;
-    border-radius: var(--radius);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 4px;
-    font-weight: 400;
+  font-size: 14px;
+  font-weight: 300;
+  border: var(--border) solid transparent;
+  text-decoration: none;
+  padding-left: 8px !important;
+  padding-right: 12px !important;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  font-weight: 400;
 }
 
 .btn-lg {
-    font-size: 16px !important;
-    padding-left: 10px !important;
-    padding-right: 14px !important;
+  font-size: 16px !important;
+  padding-left: 10px !important;
+  padding-right: 14px !important;
 }
 
 .btn-sm {
-    font-size: 12px !important;
-    font-weight: 400;
-    padding-left: 6px !important;
-    padding-right: 10px !important;
+  font-size: 12px !important;
+  font-weight: 400;
+  padding-left: 6px !important;
+  padding-right: 10px !important;
 }
 
 .btn.ai-bg-primary:focus,
 .btn.ai-bg-primary:hover,
 .btn.ai-bg-primary:active .btn.ai-bg-primary:visited {
-    background: var(--color-white);
-    color: var(--color-primary);
-    border: var(--border) solid var(--color-primary);
-    text-decoration: none;
-    box-shadow: none;
+  background: var(--color-white);
+  color: var(--color-primary);
+  border: var(--border) solid var(--color-primary);
+  text-decoration: none;
+  box-shadow: none;
 }
 
 .btn.ai-bg-primary:focus svg path,
 .btn.ai-bg-primary:hover svg path,
 .btn.ai-bg-primary:active svg path {
-    stroke: var(--color-primary);
+  stroke: var(--color-primary);
 }
 
 .btn.ai-bg-secondary:focus,
 .btn.ai-bg-secondary:hover,
 .btn.ai-bg-secondary:active .btn.ai-bg-secondary:visited {
-    background: var(--color-white);
-    color: var(--color-secondary);
-    border: var(--border) solid var(--color-secondary);
-    text-decoration: none;
-    box-shadow: none;
+  background: var(--color-white);
+  color: var(--color-secondary);
+  border: var(--border) solid var(--color-secondary);
+  text-decoration: none;
+  box-shadow: none;
 }
 
 .btn.ai-bg-secondary:focus svg path,
 .btn.ai-bg-secondary:hover svg path,
 .btn.ai-bg-secondary:active svg path {
-    stroke: var(--color-secondary);
+  stroke: var(--color-secondary);
 }
 
 .btn.ai-bg-tertiary:focus,
 .btn.ai-bg-tertiary:hover,
 .btn.ai-bg-tertiary:active .btn.ai-bg-tertiary:visited {
-    background: var(--color-white);
-    color: var(--color-tertiary);
-    border: var(--border) solid var(--color-tertiary);
-    text-decoration: none;
-    box-shadow: none;
+  background: var(--color-white);
+  color: var(--color-tertiary);
+  border: var(--border) solid var(--color-tertiary);
+  text-decoration: none;
+  box-shadow: none;
 }
 
 .btn.ai-bg-tertiary:focus svg path,
 .btn.ai-bg-tertiary:hover svg path,
 .btn.ai-bg-tertiary:active svg path {
-    stroke: var(--color-tertiary);
+  stroke: var(--color-tertiary);
 }
 
 /* .btn-primary {
@@ -531,11 +519,11 @@ svg path {
 } */
 
 .btn-lg svg {
-    height: 22px;
+  height: 22px;
 }
 
 .btn-sm svg {
-    height: 18px;
+  height: 18px;
 }
 
 /****************************************************************************************************/
@@ -543,95 +531,119 @@ svg path {
 /****************************************************************************************************/
 .input-group .btn,
 .input-group .btn:hover {
-    border-color: transparent;
+  border-color: transparent;
 }
 
 .form-input {
-    border-top-left-radius: var(--radius);
-    border-bottom-left-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
 }
 
 /****************************************************************************************************/
 /* Карточки */
 /****************************************************************************************************/
 .card {
-    background: #ffffff;
-    /* F2F3F5 */
-    border: 1px solid #f2f3f5;
-    box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
-    border-top-left-radius: var(--radius);
-    border-top-right-radius: var(--radius);
-    border-bottom-right-radius: var(--radius);
-    border-bottom-left-radius: var(--radius);
+  background: #ffffff;
+  /* F2F3F5 */
+  border: 1px solid #f2f3f5;
+  box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
 }
 
 .card .card-image:first-child img {
-    border-top-left-radius: var(--radius);
-    border-top-right-radius: var(--radius);
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 .card-header .ai-title-tertiary {
-    margin: 0;
+  margin: 0;
 }
 
 .card-body {
-    /*margin: 0; /* Убираем внешний отступ */
-    -webkit-line-clamp: 2;
-    /* Число отображаемых строк */
-    display: -webkit-box;
-    /* Включаем флексбоксы */
-    -webkit-box-orient: vertical;
-    /* Вертикальная ориентация */
-    overflow: hidden;
-    /* Обрезаем всё за пределами блока */
+  /*margin: 0; /* Убираем внешний отступ */
+  -webkit-line-clamp: 2;
+  /* Число отображаемых строк */
+  display: -webkit-box;
+  /* Включаем флексбоксы */
+  -webkit-box-orient: vertical;
+  /* Вертикальная ориентация */
+  overflow: hidden;
+  /* Обрезаем всё за пределами блока */
 }
 
 .card-footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    background: #ffffff;
-    border-bottom-right-radius: var(--radius);
-    border-bottom-left-radius: var(--radius);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom-right-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
 }
 
 .ai-card-group {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: start;
-    row-gap: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: start;
+  row-gap: 20px;
+}
+
+.ai-card-logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.ai-card-logo img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.card-owner {
+  color: var(--color-gray);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 /****************************************************************************************************/
 /* ПЕРЕОПРЕДЕЛЯЕМЫЕ КЛАССЫ LG */
 /****************************************************************************************************/
 .breadcrumb-item {
-    height: 24px;
-    font-weight: 400;
-    font-size: 14px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-
 .second-menu {
-    display: flex;
-    height: 100%;
-    margin-top: 0px;
-    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5);
+  display: flex;
+  height: 100%;
+  margin-top: 0px;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5);
 }
 
 .container-2 {
-    max-width: 1296px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
+  max-width: 1296px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
 }
