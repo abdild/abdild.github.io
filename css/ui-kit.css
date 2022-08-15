@@ -551,6 +551,9 @@ svg path {
   border-top-right-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
   border-bottom-left-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .card .card-image:first-child img {
@@ -591,6 +594,7 @@ svg path {
   /* Вертикальная ориентация */
   overflow: hidden;
   /* Обрезаем всё за пределами блока */
+  padding-left: 0.8rem !important;
 }
 
 .card-footer {
@@ -607,7 +611,7 @@ svg path {
 .ai-card-group {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: start;
   row-gap: 20px;
 }
@@ -665,4 +669,8 @@ svg path {
 
 .p-t-20 {
   padding-top: 20px;
+}
+
+.card-helper {
+  flex-grow: 1;
 }
