@@ -597,6 +597,10 @@ svg path {
   padding-left: 0.8rem !important;
 }
 
+.card .card-body {
+  flex: initial;
+}
+
 .card-footer {
   display: flex;
   flex-direction: row;
