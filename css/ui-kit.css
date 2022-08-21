@@ -647,3 +647,20 @@ svg path {
   padding-right: 0;
   width: 100%;
 }
+
+.ai-post-one img {
+  width: 100%;
+  margin: 18px 0;
+}
+
+.ai-post-one p {
+  text-align: justify;
+  text-indent: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.ai-last-post:nth-last-child(n + 2) {
+  margin-bottom: 12px;
+  border-bottom: 0.5px solid var(--color--bg-border);
+  padding-bottom: 12px;
+}

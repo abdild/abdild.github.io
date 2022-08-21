@@ -10,6 +10,10 @@ include_once('header.php');
 
     </ul>
     <ul>
+        <li><a href="news_one.php">Новость (одна)</a></li>
+
+    </ul>
+    <ul>
         <li><a href="post_landing.php">Бизнес-лента (лендинг)</a></li>
 
     </ul>
