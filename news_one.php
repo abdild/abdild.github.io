@@ -2,7 +2,8 @@
 include_once('header.php');
 ?>
 
-<div class="container grid-xl ai-bg-white">
+<div class="container content-container grid-xl ai-bg-white">
+
   <div class="breadcrumb-item "><a href="index.php">Главная</a> / Новости</div>
   <div class="columns gap-4">
     <div class="column col-8 ai-post-one">
