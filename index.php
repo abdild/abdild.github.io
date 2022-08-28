@@ -17,6 +17,10 @@ include_once('header.php');
         <li><a href="post_landing.php">Бизнес-лента (лендинг)</a></li>
 
     </ul>
+    <ul>
+        <li><a href="post_one.php">Пост Бизнес-ленты (один)</a></li>
+
+    </ul>
 </div>
 </body>
 
