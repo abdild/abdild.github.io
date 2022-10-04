@@ -21,6 +21,10 @@ include_once('header.php');
         <li><a href="post_one.php">Пост Бизнес-ленты (один)</a></li>
 
     </ul>
+    <ul>
+        <li><a href="movie_landing.php">Афиша кино (лендинг)</a></li>
+
+    </ul>
 </div>
 </body>
 

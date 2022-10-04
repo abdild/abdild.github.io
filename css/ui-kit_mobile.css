@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@media (min-width: 280px) and (max-width: 767px) {
+  #nav-menu_desktop {
+    display: none;
+  }
+  #nav-menu_mobile {
+    display: block;
+  }
+  /****************************************************************************************************/
+  /* Шапка */
+  /****************************************************************************************************/
+  /* Верхнее меню */
+  header section.container:first-child {
+    background-color: #fff;
+    padding: 6px 0;
+    -webkit-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+            box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  }
+  header section.container:first-child a {
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    -webkit-transition: 0.15s;
+    transition: 0.15s;
+  }
+  header section.container:first-child .navbar-brand {
+    height: 24px;
+  }
+  header section.container:first-child .navbar-brand img {
+    height: 24px;
+  }
+  header section.container:first-child .btn svg path {
+    stroke: #66758c;
+  }
+  header section.container:first-child .btn svg {
+    width: 22px;
+    min-height: 22px;
+  }
+  header section.container:first-child .btn svg path {
+    stroke: #66758c;
+  }
+  header section.container:first-child .btn:hover svg path {
+    stroke: #0084ca;
+  }
+  /* Нижнее меню */
+  header section.container:nth-child(2) {
+    background-color: #fff;
+    padding: 6px 0;
+    border-top: 1px solid #47556950;
+    position: fixed;
+    bottom: 0;
+  }
+  header section.container:nth-child(2) .btn {
+    font-size: 10px;
+    font-weight: 600;
+    color: #66758c;
+  }
+  header section.container:nth-child(2) .btn img {
+    width: 24px;
+    height: 24px;
+  }
+  header section.container:nth-child(2):hover .btn {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  header section.container:nth-child(2) .btn svg {
+    width: 22px;
+    min-height: 22px;
+  }
+  header section.container:nth-child(2) .btn svg path {
+    stroke: #66758c;
+  }
+  header section.container:nth-child(2) .btn:hover svg path {
+    stroke: #0084ca;
+  }
+}
+/*# sourceMappingURL=ui-kit_mobile.css.map */

@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+a:focus,
+a:hover,
+a:active,
+a.active {
+  color: #0084ca;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#nav-menu_mobile {
+  display: none;
+}
+
+.btn:focus,
+.btn:hover,
+.btn:active,
+.btn.active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/****************************************************************************************************/
+/* Шапка */
+/****************************************************************************************************/
+/* Верхний уровень меню */
+header section.container:first-child {
+  background-color: #334155;
+  padding: 1.5px 0;
+}
+
+header section.container:first-child a {
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+header section.container:first-child a:hover {
+  color: #0084ca;
+}
+
+header section.container:first-child button {
+  font-weight: 500;
+  color: #fff;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  background-color: #ffffff00;
+  border: none;
+}
+
+header section.container:first-child button:hover {
+  color: #0084ca;
+}
+
+header section.container:first-child button svg path {
+  stroke-width: 0.1rem;
+  stroke: #fff;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+header section.container:first-child .btn:hover svg path {
+  stroke: #0084ca;
+}
+
+/* Средний уровень меню */
+header section.container:nth-child(2) {
+  background-color: #fff;
+  padding: 4px 0 4px;
+  border-bottom: 1px solid #47556950;
+}
+
+header section.container:nth-child(2) .popover-container a {
+  font-weight: 600;
+  font-size: inherit;
+  color: #00a5fd;
+}
+
+header section.container:nth-child(2) a:hover {
+  color: #0084ca;
+}
+
+header section.container:nth-child(2) .navbar-brand img {
+  height: 28px;
+}
+
+header section.container:nth-child(2) .btn {
+  font-size: 13px;
+  font-weight: 500;
+  color: #303742;
+}
+
+header section.container:nth-child(2) .btn:hover {
+  font-size: 13px;
+  font-weight: 500;
+  color: #0084ca;
+}
+
+header section.container:nth-child(2) .btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+header section.container:nth-child(2) .btn svg path {
+  stroke: #303742;
+}
+
+header section.container:nth-child(2) .btn:hover svg path {
+  stroke: #0084ca;
+}
+
+header section.container:nth-child(2) .input-group-btn svg path {
+  stroke: #ffffff;
+}
+
+header section.container:nth-child(2) .input-group-btn:hover svg path {
+  stroke: #ffffff;
+}
+
+/* Нижний уровень меню */
+header section.container:nth-child(3) {
+  background-color: #fff;
+  padding: 6px 0 8px;
+  -webkit-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+          box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+}
+
+header section.container:nth-child(3) a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #303742;
+}
+
+header section.container:nth-child(3) a:hover {
+  color: #0084ca;
+}
+
+header section.container:nth-child(3) a svg path {
+  stroke: #fff;
+}
+
+.nav-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/****************************************************************************************************/
+/* Кнопки */
+/****************************************************************************************************/
+button.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+/* Альтернативная кнопка */
+.btn.btn-alternative {
+  background: #b8d02f;
+  border-color: #b8d02f;
+  color: #fff;
+}
+
+.btn.btn-alternative:focus,
+.btn.btn-alternative:hover {
+  background: #a6bb2a;
+  border-color: #a6bb2a;
+  color: #fff;
+}
+
+.btn.btn-alternative:active,
+.btn.btn-alternative.active {
+  background: #a6bb2a;
+  border-color: #a6bb2a;
+  color: #fff;
+}
+
+.btn.btn-alternative.loading::after {
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+
+/* Вертикальная кнопка */
+.btn.btn-vertical {
+  min-height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+  font-weight: 600;
+  color: #303742;
+  border: none;
+}
+
+.btn.btn-vertical:focus,
+.btn.btn-vertical:hover {
+  background: none;
+  color: #0084ca;
+}
+/*# sourceMappingURL=ui-kit_base.css.map */
