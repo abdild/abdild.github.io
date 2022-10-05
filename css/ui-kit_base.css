@@ -12,6 +12,15 @@
   font-weight: 400;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f8fafc;
+}
+
 a:focus,
 a:hover,
 a:active,
@@ -22,16 +31,13 @@ a.active {
           box-shadow: none;
 }
 
-header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
 #nav-menu_mobile {
   display: none;
 }
 
+/****************************************************************************************************/
+/* Кнопки */
+/****************************************************************************************************/
 .btn:focus,
 .btn:hover,
 .btn:active,
@@ -40,9 +46,100 @@ header {
           box-shadow: none;
 }
 
+a.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  color: #fff;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  border: none;
+}
+
+/* Альтернативная кнопка */
+a.btn.btn-alternative {
+  background: #b8d02f;
+  border-color: #b8d02f;
+  color: #fff;
+}
+
+a.btn.btn-alternative:focus,
+a.btn.btn-alternative:hover {
+  background: #a6bb2a;
+  border-color: #a6bb2a;
+  color: #fff;
+}
+
+a.btn.btn-alternative:active,
+.btn.btn-alternative.active {
+  background: #a6bb2a;
+  border-color: #a6bb2a;
+  color: #fff;
+}
+
+a.btn.btn-alternative.loading::after {
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+
+/* Вертикальная кнопка */
+a.btn-vertical {
+  min-height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+  font-weight: 600;
+  color: #303742;
+  border: none;
+}
+
+a.btn-vertical:focus,
+a.btn-vertical:hover {
+  background: none;
+  color: #0084ca;
+}
+
 /****************************************************************************************************/
 /* Шапка */
 /****************************************************************************************************/
+.nav-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 /* Верхний уровень меню */
 header section.container:first-child {
   background-color: #334155;
@@ -61,27 +158,24 @@ header section.container:first-child a:hover {
   color: #0084ca;
 }
 
-header section.container:first-child button {
+header section.container:first-child a.btn {
   font-weight: 500;
   color: #fff;
-  -webkit-transition: 0.15s;
-  transition: 0.15s;
   background-color: #ffffff00;
-  border: none;
 }
 
-header section.container:first-child button:hover {
+header section.container:first-child a.btn:hover {
   color: #0084ca;
 }
 
-header section.container:first-child button svg path {
+header section.container:first-child a.btn svg path {
   stroke-width: 0.1rem;
   stroke: #fff;
   -webkit-transition: 0.15s;
   transition: 0.15s;
 }
 
-header section.container:first-child .btn:hover svg path {
+header section.container:first-child a.btn:hover svg path {
   stroke: #0084ca;
 }
 
@@ -106,36 +200,36 @@ header section.container:nth-child(2) .navbar-brand img {
   height: 28px;
 }
 
-header section.container:nth-child(2) .btn {
+header section.container:nth-child(2) a.btn {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   color: #303742;
 }
 
-header section.container:nth-child(2) .btn:hover {
+header section.container:nth-child(2) a.btn:hover {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   color: #0084ca;
 }
 
-header section.container:nth-child(2) .btn svg {
+header section.container:nth-child(2) a.btn svg {
   width: 18px;
   height: 18px;
 }
 
-header section.container:nth-child(2) .btn svg path {
+header section.container:nth-child(2) a.btn svg path {
   stroke: #303742;
 }
 
-header section.container:nth-child(2) .btn:hover svg path {
+header section.container:nth-child(2) a.btn:hover svg path {
   stroke: #0084ca;
 }
 
-header section.container:nth-child(2) .input-group-btn svg path {
+header section.container:nth-child(2) a.btn.input-group-btn svg path {
   stroke: #ffffff;
 }
 
-header section.container:nth-child(2) .input-group-btn:hover svg path {
+header section.container:nth-child(2) a.btn.input-group-btn:hover svg path {
   stroke: #ffffff;
 }
 
@@ -143,8 +237,16 @@ header section.container:nth-child(2) .input-group-btn:hover svg path {
 header section.container:nth-child(3) {
   background-color: #fff;
   padding: 6px 0 8px;
-  -webkit-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
-          box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+          box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+header section.container:nth-child(3) a.btn {
+  color: #fff;
+}
+
+header section.container:nth-child(3) a.btn:hover {
+  color: #fff;
 }
 
 header section.container:nth-child(3) a {
@@ -161,86 +263,37 @@ header section.container:nth-child(3) a svg path {
   stroke: #fff;
 }
 
-.nav-menu {
+/****************************************************************************************************/
+/* Основной контент */
+/****************************************************************************************************/
+.wrapper {
+  min-height: calc(100vh - 240px);
+}
+
+main,
+aside {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 8px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 0.2rem;
+  background-color: #fff;
 }
 
 /****************************************************************************************************/
-/* Кнопки */
+/* Подвал */
 /****************************************************************************************************/
-button.btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 8px;
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #f1f5f9;
 }
 
-/* Альтернативная кнопка */
-.btn.btn-alternative {
-  background: #b8d02f;
-  border-color: #b8d02f;
-  color: #fff;
+footer .nav-menu {
+  padding: 12px;
 }
 
-.btn.btn-alternative:focus,
-.btn.btn-alternative:hover {
-  background: #a6bb2a;
-  border-color: #a6bb2a;
-  color: #fff;
-}
-
-.btn.btn-alternative:active,
-.btn.btn-alternative.active {
-  background: #a6bb2a;
-  border-color: #a6bb2a;
-  color: #fff;
-}
-
-.btn.btn-alternative.loading::after {
-  border-bottom-color: #fff;
-  border-left-color: #fff;
-}
-
-/* Вертикальная кнопка */
-.btn.btn-vertical {
-  min-height: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0;
-  font-weight: 600;
-  color: #303742;
-  border: none;
-}
-
-.btn.btn-vertical:focus,
-.btn.btn-vertical:hover {
-  background: none;
-  color: #0084ca;
+footer .navbar-brand img {
+  height: 24px;
 }
 /*# sourceMappingURL=ui-kit_base.css.map */

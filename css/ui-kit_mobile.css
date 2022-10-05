@@ -3,8 +3,14 @@
   #nav-menu_desktop {
     display: none;
   }
+  footer {
+    display: none;
+  }
   #nav-menu_mobile {
     display: block;
+  }
+  .wrapper {
+    padding-bottom: 64px;
   }
   /****************************************************************************************************/
   /* Шапка */
@@ -13,8 +19,8 @@
   header section.container:first-child {
     background-color: #fff;
     padding: 6px 0;
-    -webkit-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
-            box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+            box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
   }
   header section.container:first-child a {
     font-weight: 400;
@@ -29,17 +35,17 @@
   header section.container:first-child .navbar-brand img {
     height: 24px;
   }
-  header section.container:first-child .btn svg path {
+  header section.container:first-child a.btn svg path {
     stroke: #66758c;
   }
-  header section.container:first-child .btn svg {
+  header section.container:first-child a.btn svg {
     width: 22px;
     min-height: 22px;
   }
-  header section.container:first-child .btn svg path {
+  header section.container:first-child a.btn svg path {
     stroke: #66758c;
   }
-  header section.container:first-child .btn:hover svg path {
+  header section.container:first-child a.btn:hover svg path {
     stroke: #0084ca;
   }
   /* Нижнее меню */
@@ -50,27 +56,27 @@
     position: fixed;
     bottom: 0;
   }
-  header section.container:nth-child(2) .btn {
+  header section.container:nth-child(2) a.btn {
     font-size: 10px;
     font-weight: 600;
     color: #66758c;
   }
-  header section.container:nth-child(2) .btn img {
+  header section.container:nth-child(2) a.btn img {
     width: 24px;
     height: 24px;
   }
-  header section.container:nth-child(2):hover .btn {
+  header section.container:nth-child(2):hover a.btn {
     font-size: 10px;
     font-weight: 600;
   }
-  header section.container:nth-child(2) .btn svg {
+  header section.container:nth-child(2) a.btn svg {
     width: 22px;
     min-height: 22px;
   }
-  header section.container:nth-child(2) .btn svg path {
+  header section.container:nth-child(2) a.btn svg path {
     stroke: #66758c;
   }
-  header section.container:nth-child(2) .btn:hover svg path {
+  header section.container:nth-child(2) a.btn:hover svg path {
     stroke: #0084ca;
   }
 }
