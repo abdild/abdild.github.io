@@ -1,82 +1,103 @@
 @charset "UTF-8";
 @media (min-width: 280px) and (max-width: 767px) {
-  #nav-menu_desktop {
+  #header_desktop,
+  #footer_desktop {
     display: none;
   }
-  footer {
-    display: none;
-  }
-  #nav-menu_mobile {
+  #header_mobile,
+  #footer_mobile {
     display: block;
   }
   .wrapper {
     padding-bottom: 64px;
   }
   /****************************************************************************************************/
-  /* Шапка */
-  /****************************************************************************************************/
   /* Верхнее меню */
-  header section.container:first-child {
+  /****************************************************************************************************/
+  #header_mobile section.container {
     background-color: #fff;
     padding: 6px 0;
     -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
-            box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
   }
-  header section.container:first-child a {
+  #header_mobile section.container a {
     font-weight: 400;
     font-size: 12px;
     color: #fff;
     -webkit-transition: 0.15s;
     transition: 0.15s;
   }
-  header section.container:first-child .navbar-brand {
+  #header_mobile section.container .navbar-brand {
     height: 24px;
   }
-  header section.container:first-child .navbar-brand img {
+  #header_mobile section.container .navbar-brand img {
     height: 24px;
   }
-  header section.container:first-child a.btn svg path {
-    stroke: #66758c;
+  #header_mobile section.container a.btn:hover {
+    background: initial;
   }
-  header section.container:first-child a.btn svg {
+  #header_mobile section.container a.btn svg {
     width: 22px;
     min-height: 22px;
   }
-  header section.container:first-child a.btn svg path {
+  #header_mobile section.container a.btn svg path {
     stroke: #66758c;
   }
-  header section.container:first-child a.btn:hover svg path {
+  #header_mobile section.container a.btn:hover svg path {
     stroke: #0084ca;
   }
+  #header_mobile section.container a.btn.input-group-btn:hover {
+    background: #0084ca;
+  }
+  #header_mobile section.container a.btn.input-group-btn svg path {
+    stroke: #ffffff;
+  }
+  #header_mobile section.container a.btn.input-group-btn:hover svg path {
+    stroke: #ffffff;
+  }
+  /****************************************************************************************************/
+  /* Меню за гамбургером */
+  /****************************************************************************************************/
+  .hambur-menu {
+    min-height: 100%;
+    background-color: #fff;
+    margin-top: -64px;
+    padding-top: 48px;
+  }
+  /****************************************************************************************************/
   /* Нижнее меню */
-  header section.container:nth-child(2) {
+  /****************************************************************************************************/
+  #footer_mobile section.container {
     background-color: #fff;
     padding: 6px 0;
     border-top: 1px solid #47556950;
     position: fixed;
     bottom: 0;
   }
-  header section.container:nth-child(2) a.btn {
+  #footer_mobile section.container a.btn {
     font-size: 10px;
     font-weight: 600;
     color: #66758c;
   }
-  header section.container:nth-child(2) a.btn img {
+  #footer_mobile section.container a.btn:hover {
+    color: #0084ca;
+  }
+  footer#footer_mobile section.container a.btn img {
     width: 24px;
     height: 24px;
   }
-  header section.container:nth-child(2):hover a.btn {
+  #footer_mobile section.container:hover a.btn {
     font-size: 10px;
     font-weight: 600;
   }
-  header section.container:nth-child(2) a.btn svg {
+  #footer_mobile section.container a.btn svg {
     width: 22px;
     min-height: 22px;
   }
-  header section.container:nth-child(2) a.btn svg path {
+  #footer_mobile section.container a.btn svg path {
     stroke: #66758c;
   }
-  header section.container:nth-child(2) a.btn:hover svg path {
+  #footer_mobile section.container a.btn:hover svg path {
     stroke: #0084ca;
   }
 }

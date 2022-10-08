@@ -1,5 +1,6 @@
 <?php
-include_once('nav_bar.php');
+include_once('head.php');
+include_once('header.php');
 ?>
 
 <div class="wrapper container grid-lg">
@@ -562,9 +563,6 @@ include_once('nav_bar.php');
 
 </div>
 
-
-
-
 <?php
-include_once('footer_bar.php');
+include_once('footer.php');
 ?>
