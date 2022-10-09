@@ -312,14 +312,9 @@ aside {
 
 .dropdown .menu a {
     word-wrap: break-word;
-    font-size: $unit-5;
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
-.dropdown .menu li.divider {
-    text-transform: uppercase;
-    // font-weight: 500;
+    font-size: $unit-4;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 .dropdown.dropdown-up .menu {
@@ -349,6 +344,18 @@ aside {
     height: 18px;
 }
 
+.divider[data-content]::after,
+.divider-vert[data-content]::after {
+    text-transform: uppercase;
+    color: $gray-color;
+    font-weight: 600;
+}
+
+.divider {
+    border-top: 0.075rem solid #f1f3f5;
+    height: 0.05rem;
+    margin: 0.4rem 0;
+}
 
 /****************************************************************************************************/
 /* Инфо бейджи */
@@ -356,28 +363,18 @@ aside {
 .info-badge[data-badge]::after,
 .info-badge:not([data-badge])::after {
     background: $primary-color;
-    // background-clip: padding-box;
     border-radius: .5rem;
     color: #fff;
     content: attr(data-badge);
     display: inline-block;
-    // transform: translate(-0.05rem, -0.5rem);
 }
 
 .info-badge[data-badge]::after {
-    font-size: 0.6rem;
-    height: .9rem;
+    font-size: 0.8rem;
+    height: 1rem;
     line-height: 1;
-    min-width: .9rem;
+    min-width: 1rem;
     padding: .1rem .2rem;
     text-align: center;
     white-space: nowrap;
 }
-
-// .info-badge:not([data-badge])::after,
-// .info-badge[data-badge=""]::after {
-//     height: 6px;
-//     min-width: 6px;
-//     padding: 0;
-//     width: 6px;
-// }

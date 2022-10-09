@@ -308,13 +308,9 @@ aside {
 
 .dropdown .menu a {
   word-wrap: break-word;
-  font-size: 1rem;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.dropdown .menu li.divider {
-  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .dropdown.dropdown-up .menu {
@@ -350,6 +346,19 @@ aside {
   height: 18px;
 }
 
+.divider[data-content]::after,
+.divider-vert[data-content]::after {
+  text-transform: uppercase;
+  color: #bcc3ce;
+  font-weight: 600;
+}
+
+.divider {
+  border-top: 0.075rem solid #f1f3f5;
+  height: 0.05rem;
+  margin: 0.4rem 0;
+}
+
 /****************************************************************************************************/
 /* Инфо бейджи */
 /****************************************************************************************************/
@@ -363,10 +372,10 @@ aside {
 }
 
 .info-badge[data-badge]::after {
-  font-size: 0.6rem;
-  height: .9rem;
+  font-size: 0.8rem;
+  height: 1rem;
   line-height: 1;
-  min-width: .9rem;
+  min-width: 1rem;
   padding: .1rem .2rem;
   text-align: center;
   white-space: nowrap;

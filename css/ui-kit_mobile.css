@@ -24,14 +24,14 @@
     height: 24px;
   }
   #header_mobile section.container .navbar-brand img {
-    height: 24px;
+    height: 28px;
   }
   #header_mobile section.container a.btn:hover {
     background: initial;
   }
   #header_mobile section.container a.btn svg {
-    width: 22px;
-    min-height: 22px;
+    width: 28px;
+    min-height: 28px;
   }
   #header_mobile section.container a.btn svg path {
     stroke: #66758c;
@@ -67,22 +67,26 @@
     color: #0084ca;
   }
   footer#footer_mobile section.container a.btn img {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
   }
   #footer_mobile section.container:hover a.btn {
     font-size: 10px;
     font-weight: 600;
   }
   #footer_mobile section.container a.btn svg {
-    width: 22px;
-    min-height: 22px;
+    width: 28px;
+    min-height: 28px;
   }
   #footer_mobile section.container a.btn svg path {
     stroke: #66758c;
   }
   #footer_mobile section.container a.btn:hover svg path {
     stroke: #0084ca;
+  }
+  .dropdown .menu a {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 /*# sourceMappingURL=ui-kit_mobile.css.map */
