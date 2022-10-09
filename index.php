@@ -6,7 +6,7 @@ include_once('header.php');
 <div class="wrapper container grid-lg">
     <main class="">
 
-        <h1 class="ai-title-primary">Содержание</h1>
+        <!-- <h1 class="ai-title-primary">Содержание</h1>
         <ul>
             <li><a href="news_landing.php">Новости (лендинг)</a></li>
 
@@ -26,56 +26,7 @@ include_once('header.php');
         <ul>
             <li><a href="movie_landing.php">Афиша кино (лендинг)</a></li>
 
-        </ul>
-
-        <a href="#" class="btn btn-vertical">
-            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M13 9V5C13 3.93913 12.5786 2.92172 11.8284 2.17157C11.0783 1.42143 10.0609 1 9 1C7.93913 1 6.92172 1.42143 6.17157 2.17157C5.42143 2.92172 5 3.93913 5 5V9M2 7H16L17 19H1L2 7Z"
-                    stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            Заказы
-        </a>
-
-        <a href="#" class="btn btn-primary">
-            <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M12.0002 14C14.2094 14 16.0002 12.2091 16.0002 10C16.0002 7.79086 14.2094 6 12.0002 6C9.79111 6 8.00024 7.79086 8.00024 10C8.00024 12.2091 9.79111 14 12.0002 14Z"
-                    stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M15.5002 13.5L18.0002 16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M1 1H17" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M1 7H5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M1 13H5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-            Каталог
-        </a>
-
-        <div class="dropdown dropdown-up dropdown-center">
-            <a href="#" class="btn btn-alternative dropdown-toggle" tabindex="0">
-                Добавить <i class="icon icon-caret"></i>
-            </a>
-            <ul class="menu">
-                <li class="menu-item">
-                    <a href="#menus">Новость</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="">Компанию</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="">Акцию</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="">Афишу</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="">Объявление</a>
-                </li>
-            </ul>
-        </div>
+        </ul> -->
 
         КАК СТАТЬ АВТОРОМ
         Что интересного было в сезоне Java
