@@ -20,13 +20,6 @@
     -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
     box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
   }
-  #header_mobile section.container a {
-    font-weight: 400;
-    font-size: 12px;
-    color: #fff;
-    -webkit-transition: 0.15s;
-    transition: 0.15s;
-  }
   #header_mobile section.container .navbar-brand {
     height: 24px;
   }
@@ -54,15 +47,6 @@
   }
   #header_mobile section.container a.btn.input-group-btn:hover svg path {
     stroke: #ffffff;
-  }
-  /****************************************************************************************************/
-  /* Меню за гамбургером */
-  /****************************************************************************************************/
-  .hambur-menu {
-    min-height: 100%;
-    background-color: #fff;
-    margin-top: -64px;
-    padding-top: 48px;
   }
   /****************************************************************************************************/
   /* Нижнее меню */

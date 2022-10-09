@@ -54,7 +54,7 @@ include_once('header.php');
             Каталог
         </a>
 
-        <div class="dropdown dropdown-right">
+        <div class="dropdown dropdown-up dropdown-center">
             <a href="#" class="btn btn-alternative dropdown-toggle" tabindex="0">
                 Добавить <i class="icon icon-caret"></i>
             </a>

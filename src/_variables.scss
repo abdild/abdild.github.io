@@ -8,7 +8,7 @@ $rtl: false !default;
 $primary-color: #0084ca !default;
 $primary-color-dark: darken($primary-color, 3%) !default;
 $primary-color-light: lighten($primary-color, 3%) !default;
-$secondary-color: lighten($primary-color, 37.5%) !default;
+$secondary-color: lighten($primary-color, 50%) !default;
 $secondary-color-dark: darken($secondary-color, 3%) !default;
 $secondary-color-light: lighten($secondary-color, 3%) !default;
 
@@ -27,12 +27,12 @@ $bg-color-dark: darken($bg-color, 3%) !default;
 $bg-color-light: $light-color !default;
 
 // Control colors
-$success-color: #32b643 !default;
-$warning-color: #ffb700 !default;
-$error-color: #e85600 !default;
+$success-color: #10b981 !default;
+$warning-color: #f59e0b !default;
+$error-color: #ef4444 !default;
 
 // Other colors
-$code-color: #d73e48 !default;
+$code-color: #9333ea !default;
 $highlight-color: #ffe9b3 !default;
 $body-bg: $bg-color-light !default;
 $body-font-color: lighten($dark-color, 5%) !default;
@@ -121,6 +121,7 @@ $control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !de
 $control-icon-size: .8rem !default;
 
 $control-width-xs: 180px !default;
+$control-width-xm: 240px !default;
 $control-width-sm: 320px !default;
 $control-width-md: 640px !default;
 $control-width-lg: 960px !default;

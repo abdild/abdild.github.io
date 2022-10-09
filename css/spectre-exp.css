@@ -141,7 +141,7 @@
 }
 
 .calendar .calendar-date .date-item.date-today {
-  border-color: #7bd1ff;
+  border-color: #bbe7ff;
   color: #0084ca;
 }
 
@@ -151,8 +151,8 @@
 }
 
 .calendar .calendar-date .date-item:focus, .calendar .calendar-date .date-item:hover {
-  background: #9adcff;
-  border-color: #7bd1ff;
+  background: #d9f2ff;
+  border-color: #bbe7ff;
   color: #0084ca;
   text-decoration: none;
 }
@@ -190,7 +190,7 @@
 }
 
 .calendar .calendar-range::before {
-  background: #8ad7ff;
+  background: #caedff;
   content: "";
   height: 1.4rem;
   left: 0;
@@ -634,15 +634,15 @@
 }
 
 .meter::-webkit-meter-optimum-value {
-  background: #32b643;
+  background: #10b981;
 }
 
 .meter::-webkit-meter-suboptimum-value {
-  background: #ffb700;
+  background: #f59e0b;
 }
 
 .meter::-webkit-meter-even-less-good-value {
-  background: #e85600;
+  background: #ef4444;
 }
 
 .meter::-moz-meter-bar, .meter:-moz-meter-optimum, .meter:-moz-meter-sub-optimum, .meter:-moz-meter-sub-sub-optimum {
@@ -650,15 +650,15 @@
 }
 
 .meter:-moz-meter-optimum::-moz-meter-bar {
-  background: #32b643;
+  background: #10b981;
 }
 
 .meter:-moz-meter-sub-optimum::-moz-meter-bar {
-  background: #ffb700;
+  background: #f59e0b;
 }
 
 .meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-  background: #e85600;
+  background: #ef4444;
 }
 
 .off-canvas {
