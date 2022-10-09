@@ -303,11 +303,14 @@ aside {
 /* Меню Dropdown вверх */
 /****************************************************************************************************/
 .dropdown .menu {
-  width: 240px;
+  width: 280px;
 }
 
 .dropdown .menu a {
   word-wrap: break-word;
+  font-size: 0.8rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .dropdown .menu li.divider {
@@ -320,7 +323,7 @@ aside {
 }
 
 .dropdown-center .menu {
-  left: -80px;
+  left: -90px;
 }
 
 .dropdown .menu .menu-item > a {
@@ -350,18 +353,10 @@ aside {
 /****************************************************************************************************/
 /* Инфо бейджи */
 /****************************************************************************************************/
-.info-badge {
-  -webkit-box-shadow: 0 0 0 0.1rem #fff;
-          box-shadow: 0 0 0 0.1rem #fff;
-}
-
 .info-badge[data-badge]::after,
 .info-badge:not([data-badge])::after {
   background: #0084ca;
-  background-clip: padding-box;
   border-radius: .5rem;
-  -webkit-box-shadow: 0 0 0 0.1rem #fff;
-          box-shadow: 0 0 0 0.1rem #fff;
   color: #fff;
   content: attr(data-badge);
   display: inline-block;
@@ -375,13 +370,5 @@ aside {
   padding: .1rem .2rem;
   text-align: center;
   white-space: nowrap;
-}
-
-.info-badge:not([data-badge])::after,
-.info-badge[data-badge=""]::after {
-  height: 6px;
-  min-width: 6px;
-  padding: 0;
-  width: 6px;
 }
 /*# sourceMappingURL=ui-kit_base.css.map */

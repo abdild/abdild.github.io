@@ -307,11 +307,14 @@ aside {
 /* Меню Dropdown вверх */
 /****************************************************************************************************/
 .dropdown .menu {
-    width: 240px;
+    width: 280px;
 }
 
 .dropdown .menu a {
     word-wrap: break-word;
+    font-size: $unit-4;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .dropdown .menu li.divider {
@@ -325,7 +328,7 @@ aside {
 }
 
 .dropdown-center .menu {
-    left: -80px;
+    left: -90px;
 }
 
 .dropdown .menu .menu-item>a {
@@ -350,18 +353,11 @@ aside {
 /****************************************************************************************************/
 /* Инфо бейджи */
 /****************************************************************************************************/
-.info-badge {
-    box-shadow: 0 0 0 0.1rem #fff;
-}
-
-
-
 .info-badge[data-badge]::after,
 .info-badge:not([data-badge])::after {
     background: $primary-color;
-    background-clip: padding-box;
+    // background-clip: padding-box;
     border-radius: .5rem;
-    box-shadow: 0 0 0 0.1rem #fff;
     color: #fff;
     content: attr(data-badge);
     display: inline-block;
@@ -378,10 +374,10 @@ aside {
     white-space: nowrap;
 }
 
-.info-badge:not([data-badge])::after,
-.info-badge[data-badge=""]::after {
-    height: 6px;
-    min-width: 6px;
-    padding: 0;
-    width: 6px;
-}
+// .info-badge:not([data-badge])::after,
+// .info-badge[data-badge=""]::after {
+//     height: 6px;
+//     min-width: 6px;
+//     padding: 0;
+//     width: 6px;
+// }
