@@ -59,7 +59,7 @@
     bottom: 0;
   }
   #footer_mobile section.container a.btn {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
     color: #66758c;
   }
@@ -67,12 +67,8 @@
     color: #0084ca;
   }
   footer#footer_mobile section.container a.btn img {
-    width: 28px;
-    height: 28px;
-  }
-  #footer_mobile section.container:hover a.btn {
-    font-size: 10px;
-    font-weight: 600;
+    width: 32px;
+    height: 32px;
   }
   #footer_mobile section.container a.btn svg {
     width: 28px;
