@@ -24,7 +24,7 @@
     height: 24px;
   }
   #header_mobile section.container .navbar-brand img {
-    height: 28px;
+    height: 32px;
   }
   #header_mobile section.container a.btn:hover {
     background: initial;
@@ -67,8 +67,8 @@
     color: #0084ca;
   }
   footer#footer_mobile section.container a.btn img {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
   }
   #footer_mobile section.container a.btn svg {
     width: 28px;

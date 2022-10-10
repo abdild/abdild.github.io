@@ -542,7 +542,7 @@ abbr[title] {
 }
 
 kbd {
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   line-height: 1.25;
   padding: .1rem .2rem;
   background: #303742;
@@ -554,7 +554,7 @@ mark {
   background: #ffe9b3;
   color: #3b4351;
   border-bottom: 0.05rem solid #ffd367;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   padding: 0.05rem 0.1rem 0;
 }
 
@@ -711,7 +711,7 @@ html:lang(ko),
           appearance: none;
   background: #fff;
   border: 0.05rem solid #0084ca;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   color: #0084ca;
   cursor: pointer;
   display: inline-block;
@@ -989,7 +989,7 @@ legend {
   background: #fff;
   background-image: none;
   border: 0.05rem solid #bcc3ce;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   color: #3b4351;
   display: block;
   font-size: 0.8rem;
@@ -1075,7 +1075,7 @@ textarea.form-input, textarea.form-input.input-lg, textarea.form-input.input-sm 
      -moz-appearance: none;
           appearance: none;
   border: 0.05rem solid #bcc3ce;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   color: inherit;
   font-size: 0.8rem;
   height: 1.8rem;
@@ -1235,7 +1235,7 @@ textarea.form-input, textarea.form-input.input-lg, textarea.form-input.input-sm 
 }
 
 .form-checkbox .form-icon {
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
 }
 
 .form-checkbox input:checked + .form-icon::before {
@@ -1336,7 +1336,7 @@ textarea.form-input, textarea.form-input.input-lg, textarea.form-input.input-sm 
 .input-group .input-group-addon {
   background: #f7f8f9;
   border: 0.05rem solid #bcc3ce;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   line-height: 1.2rem;
   padding: 0.25rem 0.4rem;
   white-space: nowrap;
@@ -1519,7 +1519,7 @@ input:disabled + .form-icon, input.disabled + .form-icon {
 }
 
 .label {
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   line-height: 1.25;
   padding: .1rem .2rem;
   background: #eef0f3;
@@ -1559,7 +1559,7 @@ input:disabled + .form-icon, input.disabled + .form-icon {
 }
 
 code {
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   line-height: 1.25;
   padding: .1rem .2rem;
   background: #fbf8fe;
@@ -1568,7 +1568,7 @@ code {
 }
 
 .code {
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   color: #3b4351;
   position: relative;
 }
@@ -2435,7 +2435,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .bar {
   background: #eef0f3;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2464,13 +2464,13 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .bar .bar-item:first-child {
-  border-bottom-left-radius: 0.2rem;
-  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.4rem;
+  border-top-left-radius: 0.4rem;
 }
 
 .bar .bar-item:last-child {
-  border-bottom-right-radius: 0.2rem;
-  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
   -ms-flex-negative: 1;
       flex-shrink: 1;
 }
@@ -2514,7 +2514,7 @@ summary.accordion-header::-webkit-details-marker {
 .card {
   background: #fff;
   border: 0.05rem solid #dadee4;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2552,13 +2552,13 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .card .card-image:first-child img {
-  border-top-left-radius: 0.2rem;
-  border-top-right-radius: 0.2rem;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
 }
 
 .card .card-image:last-child img {
-  border-bottom-left-radius: 0.2rem;
-  border-bottom-right-radius: 0.2rem;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
 }
 
 .chip {
@@ -2627,13 +2627,13 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .dropdown .btn-group .dropdown-toggle:nth-last-child(2) {
-  border-bottom-right-radius: 0.2rem;
-  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
 }
 
 .empty {
   background: #f7f8f9;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   color: #66758c;
   text-align: center;
   padding: 3.2rem 1.6rem;
@@ -2656,7 +2656,7 @@ summary.accordion-header::-webkit-details-marker {
   -webkit-box-shadow: 0 0.05rem 0.2rem rgba(48, 55, 66, 0.3);
           box-shadow: 0 0.05rem 0.2rem rgba(48, 55, 66, 0.3);
   background: #fff;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   list-style: none;
   margin: 0;
   min-width: 180px;
@@ -2680,7 +2680,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .menu .menu-item > a {
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   color: inherit;
   display: block;
   margin: 0 -0.4rem;
@@ -2787,7 +2787,7 @@ summary.accordion-header::-webkit-details-marker {
   -webkit-box-shadow: 0 0.2rem 0.5rem rgba(48, 55, 66, 0.3);
           box-shadow: 0 0.2rem 0.5rem rgba(48, 55, 66, 0.3);
   background: #fff;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2876,7 +2876,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .pagination .page-item a {
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   display: inline-block;
   padding: 0.2rem 0.4rem;
   text-decoration: none;
@@ -2918,7 +2918,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .panel {
   border: 0.05rem solid #dadee4;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3219,7 +3219,7 @@ summary.accordion-header::-webkit-details-marker {
   background: rgba(48, 55, 66, 0.95);
   border-color: #303742;
   border: 0.05rem solid #303742;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   color: #fff;
   display: block;
   padding: 0.4rem;
@@ -3269,7 +3269,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .tooltip::after {
   background: rgba(48, 55, 66, 0.95);
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   bottom: 100%;
   color: #fff;
   content: attr(data-tooltip);
@@ -3924,7 +3924,7 @@ a.text-error:visited {
 }
 
 .s-rounded {
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
 }
 
 .s-circle {
