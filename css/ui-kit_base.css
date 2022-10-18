@@ -70,6 +70,7 @@ a.btn {
   transition: 0.15s;
   border: none;
   color: #fff;
+  border-radius: 0.4rem;
 }
 
 /* Альтернативная кнопка */
@@ -280,7 +281,7 @@ header {
 
 main,
 aside {
-  padding: 0.2rem;
+  padding: 1rem;
 }
 
 /****************************************************************************************************/

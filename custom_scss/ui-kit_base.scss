@@ -75,6 +75,7 @@ a.btn {
     transition: 0.15s;
     border: none;
     color: #fff;
+    border-radius: $unit-2;
 }
 
 /* Альтернативная кнопка */
@@ -280,7 +281,7 @@ aside {
     // width: 100%;
     // padding-top: $unit-1;
     // padding-bottom: $unit-1;
-    padding: $unit-1;
+    padding: $unit-5;
     // margin-top: 12px;
     // margin-bottom: 12px;
     // border-radius: $border-radius;

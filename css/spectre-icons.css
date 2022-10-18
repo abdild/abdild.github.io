@@ -329,8 +329,8 @@
 
 .icon-delete::before {
   border: 0.1rem solid currentColor;
-  border-bottom-left-radius: 0.4rem;
-  border-bottom-right-radius: 0.4rem;
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
   border-top: 0;
   height: .75em;
   top: 60%;
@@ -348,7 +348,7 @@
 
 .icon-share {
   border: 0.1rem solid currentColor;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
   border-right: 0;
   border-top: 0;
 }
@@ -383,9 +383,9 @@
 
 .icon-flag::after {
   border: 0.1rem solid currentColor;
-  border-bottom-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.2rem;
   border-left: 0;
-  border-top-right-radius: 0.4rem;
+  border-top-right-radius: 0.2rem;
   height: .65em;
   top: 35%;
   left: 60%;
@@ -395,8 +395,8 @@
 .icon-bookmark::before {
   border: 0.1rem solid currentColor;
   border-bottom: 0;
-  border-top-left-radius: 0.4rem;
-  border-top-right-radius: 0.4rem;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
   height: .9em;
   width: .8em;
 }
@@ -405,7 +405,7 @@
   border: 0.1rem solid currentColor;
   border-bottom: 0;
   border-left: 0;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
   height: .5em;
   -webkit-transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
           transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
@@ -447,7 +447,7 @@
 
 .icon-copy::before {
   border: 0.1rem solid currentColor;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
   border-right: 0;
   border-bottom: 0;
   height: .8em;
@@ -458,7 +458,7 @@
 
 .icon-copy::after {
   border: 0.1rem solid currentColor;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
   height: .8em;
   left: 60%;
   top: 60%;
@@ -490,7 +490,7 @@
 
 .icon-mail::before {
   border: 0.1rem solid currentColor;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
   height: .8em;
   width: 1em;
 }
@@ -524,13 +524,13 @@
 .icon-message {
   border: 0.1rem solid currentColor;
   border-bottom: 0;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
   border-right: 0;
 }
 
 .icon-message::before {
   border: 0.1rem solid currentColor;
-  border-bottom-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.2rem;
   border-left: 0;
   border-top: 0;
   height: .8em;
@@ -541,7 +541,7 @@
 
 .icon-message::after {
   background: currentColor;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
   height: .3em;
   left: 10%;
   top: 100%;
@@ -552,7 +552,7 @@
 
 .icon-photo {
   border: 0.1rem solid currentColor;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
 }
 
 .icon-photo::before {
