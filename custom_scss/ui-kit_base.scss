@@ -11,7 +11,6 @@
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
-
     font-size: $font-unit;
     // line-height: calc(1.35 * $font-unit);
     letter-spacing: 0.15px;
@@ -150,7 +149,6 @@ header {
 /* Верхний уровень меню */
 #header_desktop section.container:first-child {
     background-color: #334155;
-    padding: 1.5px 0;
 }
 
 #header_desktop section.container:first-child a {
@@ -414,6 +412,24 @@ a.card:hover {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.img-responsive {
+    object-fit: cover;
+}
+
+.img-1_1 {
+    aspect-ratio: 1/1;
+}
+
+.img-3_4 {
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
+.img-4_3 {
+    aspect-ratio: 4/3;
+    object-fit: cover;
 }
 
 .card-body {

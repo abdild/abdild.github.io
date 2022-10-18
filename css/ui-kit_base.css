@@ -152,7 +152,6 @@ header {
 /* Верхний уровень меню */
 #header_desktop section.container:first-child {
   background-color: #334155;
-  padding: 1.5px 0;
 }
 
 #header_desktop section.container:first-child a {
@@ -417,6 +416,27 @@ a.card:hover {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.img-responsive {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-1_1 {
+  aspect-ratio: 1/1;
+}
+
+.img-3_4 {
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-4_3 {
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-body {

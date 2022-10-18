@@ -496,22 +496,22 @@ h6 {
 
 h1,
 .h1 {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 h2,
 .h2 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 h3,
 .h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 h4,
 .h4 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 h5,
@@ -1664,13 +1664,13 @@ video.video-responsive::before {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
+  padding-left: 24px;
+  padding-right: 24px;
   width: 100%;
 }
 
 .container.grid-xl {
-  max-width: 1296px;
+  max-width: 1144px;
 }
 
 .container.grid-lg {
@@ -1825,7 +1825,7 @@ video.video-responsive::before {
   margin-right: auto;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1128px) {
   .col-xl-12,
   .col-xl-11,
   .col-xl-10,
