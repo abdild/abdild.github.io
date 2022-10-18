@@ -101,7 +101,7 @@
   /****************************************************************************************************/
   .card-title {
     height: 2.1rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 700;
     -webkit-line-clamp: 2;
     display: -webkit-box;
@@ -110,7 +110,7 @@
   }
   .card-body {
     height: 2.9rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     -webkit-line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
