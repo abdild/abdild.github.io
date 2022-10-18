@@ -23,9 +23,6 @@
   aside {
     padding: 0.6rem;
   }
-  * {
-    font-size: 0.9rem;
-  }
   /****************************************************************************************************/
   /* Верхнее меню */
   /****************************************************************************************************/
@@ -98,10 +95,43 @@
   .dropdown .menu a {
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 0.9rem;
   }
   /****************************************************************************************************/
   /* Карточки */
   /****************************************************************************************************/
+  .card-title {
+    height: 2.1rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-body {
+    height: 2.9rem;
+    font-size: 0.7rem;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-footer {
+    color: #66758c;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 4px;
+  }
 }
 /*# sourceMappingURL=ui-kit_mobile.css.map */

@@ -6,9 +6,8 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
   font-style: normal;
-  font-size: 0.7rem;
-  letter-spacing: 0.15px;
   font-weight: 400;
 }
 
@@ -310,7 +309,7 @@ aside {
 
 .dropdown .menu a {
   word-wrap: break-word;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding-top: 6px;
   padding-bottom: 6px;
 }
@@ -412,7 +411,6 @@ a.card:hover {
   height: 2.1rem;
   font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: -0.3px;
   -webkit-line-clamp: 2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -441,8 +439,8 @@ a.card:hover {
 }
 
 .card-body {
-  height: 2.75rem;
-  font-size: 0.65rem;
+  height: 2.9rem;
+  font-size: 0.7rem;
   -webkit-line-clamp: 2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -468,7 +466,7 @@ a.card:hover {
 }
 
 .card-footer span {
-  font-size: 0.65rem;
+  font-size: 14px;
 }
 
 .card-footer span:nth-child(1) {

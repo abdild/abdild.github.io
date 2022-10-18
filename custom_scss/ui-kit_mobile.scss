@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 @import "../src/variables";
-@import "custom_variables";
+// @import "custom_variables";
 
 
 @media (min-width: 280px) and (max-width: 767px) {
@@ -31,21 +31,8 @@
 
     main,
     aside {
-        // width: 100%;
-        // padding-top: $unit-1;
-        // padding-bottom: $unit-1;
         padding: $unit-3;
-        // margin-top: 12px;
-        // margin-bottom: 12px;
-        // border-radius: $border-radius;
-        // background-color: #fff;
     }
-
-    * {
-        font-size: $font-unit-2;
-    }
-
-
 
     /****************************************************************************************************/
     /* Верхнее меню */
@@ -140,34 +127,41 @@
         stroke: #0084ca;
     }
 
-
     .dropdown .menu a {
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: $font-unit-2;
+        // font-size: $font-size-lg;
     }
-
 
     /****************************************************************************************************/
     /* Карточки */
     /****************************************************************************************************/
-    // .card-title {
-    //     height: 2.6rem;
-    //     font-size: $font-unit-1;
-    //     font-weight: 700;
-    //     letter-spacing: -0.3px;
-    //     -webkit-line-clamp: 2;
-    //     display: -webkit-box;
-    //     -webkit-box-orient: vertical;
-    //     overflow: hidden;
-    // }
+    .card-title {
+        height: 2.1rem;
+        font-size: $font-size-sm;
+        font-weight: 700;
+        // letter-spacing: -0.3px;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
 
-    // .card-body {
-    //     height: 3.25rem;
-    //     font-size: $font-unit-1;
-    //     -webkit-line-clamp: 2;
-    //     display: -webkit-box;
-    //     -webkit-box-orient: vertical;
-    //     overflow: hidden;
-    // }
+    .card-body {
+        height: 2.9rem;
+        font-size: $font-size-sm;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .card-footer {
+        color: $gray-color-dark;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+    }
 }
