@@ -130,15 +130,15 @@
     .dropdown .menu a {
         padding-top: 10px;
         padding-bottom: 10px;
-        // font-size: $font-size-lg;
+        font-size: $font-size-lg;
     }
 
     /****************************************************************************************************/
     /* Карточки */
     /****************************************************************************************************/
     .card-title {
-        height: 2.1rem;
-        font-size: $font-size;
+        height: 2.8rem;
+        font-size: $font-size-lg;
         font-weight: 700;
         // letter-spacing: -0.3px;
         -webkit-line-clamp: 2;
@@ -148,8 +148,8 @@
     }
 
     .card-body {
-        height: 2.9rem;
-        font-size: $font-size;
+        height: 3.4rem;
+        font-size: $font-size-lg;
         -webkit-line-clamp: 2;
         display: -webkit-box;
         -webkit-box-orient: vertical;
