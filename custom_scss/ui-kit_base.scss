@@ -272,18 +272,17 @@ header {
 /****************************************************************************************************/
 .wrapper {
     min-height: calc(100vh - 240px);
+    padding-top: $unit-3;
 }
 
-main,
-aside {
-    // width: 100%;
-    // padding-top: $unit-1;
-    // padding-bottom: $unit-1;
-    padding: $unit-5;
-    // margin-top: 12px;
-    // margin-bottom: 12px;
-    // border-radius: $border-radius;
-    // background-color: #fff;
+.main,
+.aside {
+    // padding: $unit-3 $unit-5;
+    // margin: $unit-3 $unit-5 !important;
+    padding: $unit-3;
+    margin: 0;
+    border-radius: $border-radius;
+    background-color: #fff;
 }
 
 /****************************************************************************************************/

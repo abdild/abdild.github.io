@@ -20,8 +20,8 @@
     .container {
         margin-left: auto;
         margin-right: auto;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 12px;
+        padding-right: 12px;
         width: 100%;
     }
 
@@ -29,10 +29,6 @@
         padding-bottom: 64px;
     }
 
-    main,
-    aside {
-        padding: $unit-3;
-    }
 
     /****************************************************************************************************/
     /* Верхнее меню */

@@ -12,16 +12,12 @@
   .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
     width: 100%;
   }
   .wrapper {
     padding-bottom: 64px;
-  }
-  main,
-  aside {
-    padding: 0.6rem;
   }
   /****************************************************************************************************/
   /* Верхнее меню */
