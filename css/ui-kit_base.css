@@ -20,6 +20,14 @@ body {
   background-color: #f8fafc;
 }
 
+footer {
+  width: 100%;
+}
+
+a {
+  word-wrap: break-word;
+}
+
 a:focus,
 a:hover,
 a:active,
@@ -41,12 +49,19 @@ a.active {
   padding: 0;
 }
 
+.popover-container {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 5px 2px rgba(34, 60, 80, 0.05);
+          box-shadow: 0px 1px 5px 2px rgba(34, 60, 80, 0.05);
+  border-radius: 0.2rem;
+}
+
 /****************************************************************************************************/
 /* Основной контент */
 /****************************************************************************************************/
 .wrapper {
   min-height: calc(100vh - 240px);
-  padding: 0.6rem 0;
+  padding: 0.4rem 0;
 }
 
 .main,
@@ -495,11 +510,58 @@ a.card:hover {
 /****************************************************************************************************/
 /* БЛОКИ */
 /****************************************************************************************************/
+.block_avatar {
+  width: 100%;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  margin-bottom: 0.4rem;
+}
+
+.avatar_icon {
+  width: 36px;
+  height: 36px;
+}
+
+.avatar_icon img {
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 1px 5px 2px rgba(34, 60, 80, 0.05);
+          box-shadow: 0px 1px 5px 2px rgba(34, 60, 80, 0.05);
+}
+
+.avatar_title {
+  font-size: 0.7rem;
+}
+
 .block_news h1 {
   margin-bottom: 0.75rem;
 }
 
 .block_news img {
   margin: 1.2rem 0;
+}
+
+.block_news p {
+  word-wrap: break-word;
+}
+
+.block_news div a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-wrap: normal;
 }
 /*# sourceMappingURL=ui-kit_base.css.map */
