@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 @import "../src/variables";
-// @import "custom_variables";
 
 
 @media (min-width: 280px) and (max-width: 767px) {
@@ -18,17 +17,29 @@
     }
 
     // .container {
-    //     // margin-left: auto;
-    //     // margin-right: auto;
-    //     // padding-left: 12px;
-    //     // padding-right: 12px;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     padding-left: 12px;
+    //     padding-right: 12px;
     //     margin: 0;
     //     padding: 0;
     //     width: 100%;
     // }
 
-    .wrapper {
-        padding-bottom: 72px;
+    // .wrapper {
+    //     padding-bottom: 72px;
+    // }
+
+    .container {
+        padding-left: $unit-3;
+        padding-right: $unit-3;
+    }
+
+    main {
+        padding-left: $unit-3;
+        padding-right: $unit-3;
+        margin-top: $unit-3;
+        margin-bottom: $unit-3;
     }
 
 
@@ -88,10 +99,14 @@
     /****************************************************************************************************/
     #footer_mobile .container {
         background-color: #fff;
-        padding: 6px 14px 6px 6px;
+        padding: 8px 6px;
         border-top: 1px solid #47556950;
         position: fixed;
         bottom: 0;
+    }
+
+    #footer_mobile .container .nav-menu {
+        gap: 0;
     }
 
     #footer_mobile .container a.btn {

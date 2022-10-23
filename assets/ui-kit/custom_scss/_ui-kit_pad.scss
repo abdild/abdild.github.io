@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 @import "../src/variables";
-@import "custom_variables";
 
 @media (min-width: 768px) and (max-width: 960px) {
 
@@ -12,13 +11,19 @@
     #header_mobile,
     #footer_mobile {
         display: none;
-    }// .container {
-//     margin-left: auto;
-//     margin-right: auto;
-//     padding-left: 12px;
-//     padding-right: 12px;
-//     width: 100%;
-// }
+    }
+
+    .container {
+        padding-left: $unit-2;
+        padding-right: $unit-2;
+    }
+
+    main {
+        padding-left: $unit-2;
+        padding-right: $unit-2;
+        margin-top: $unit-3;
+        margin-bottom: $unit-3;
+    }
 
     #header_desktop .container:nth-child(3) a {
         font-size: 12px;
