@@ -304,6 +304,11 @@ header {
   height: 24px;
 }
 
+.menu {
+  background-color: none;
+  color: #303742;
+}
+
 /****************************************************************************************************/
 /* Меню Dropdown вверх */
 /****************************************************************************************************/
@@ -538,6 +543,16 @@ figure.carousel-item img {
 #footer_mobile {
     display: none;
   }
+  .container {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  main {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
   #header_desktop .container:nth-child(3) a {
     font-size: 12px;
   }
@@ -551,8 +566,16 @@ figure.carousel-item img {
 #footer_mobile {
     display: block;
   }
-  .wrapper {
-    padding-bottom: 72px;
+  .container {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+  main {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    padding-bottom: 74px;
   }
   /****************************************************************************************************/
   /* Верхнее меню */
@@ -597,10 +620,13 @@ figure.carousel-item img {
   /****************************************************************************************************/
   #footer_mobile .container {
     background-color: #fff;
-    padding: 6px 14px 6px 6px;
+    padding: 8px 6px;
     border-top: 1px solid rgba(71, 85, 105, 0.3137254902);
     position: fixed;
     bottom: 0;
+  }
+  #footer_mobile .container .nav-menu {
+    gap: 0;
   }
   #footer_mobile .container a.btn {
     font-size: 11px;

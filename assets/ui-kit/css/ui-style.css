@@ -29,6 +29,10 @@ a {
   word-wrap: break-word;
 }
 
+li {
+  list-style-type: none;
+}
+
 a:focus,
 a:hover,
 a:active,
@@ -76,7 +80,6 @@ main {
   max-width: 1108px;
   min-height: calc(100vh - 240px);
   border-radius: 0.2rem;
-  background-color: #fff;
 }
 
 .main,
@@ -300,16 +303,38 @@ header {
 /****************************************************************************************************/
 #footer_desktop {
   width: 100%;
-  height: 80px;
+  min-height: 80px;
   background-color: #f1f5f9;
 }
 
 #footer_desktop .nav-menu {
-  padding: 12px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0;
+  padding: 2rem 0;
 }
 
 #footer_desktop .navbar-brand img {
-  height: 24px;
+  height: 32px;
+}
+
+#footer_desktop ul {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+#footer_desktop ul li a {
+  font-size: 0.7rem;
+  color: #303742;
+}
+
+#footer_desktop ul li a:hover {
+  color: #0084ca;
 }
 
 /****************************************************************************************************/
@@ -559,6 +584,9 @@ figure.carousel-item img {
   #header_desktop .container:nth-child(3) a {
     font-size: 12px;
   }
+  #footer_desktop .navbar-brand img {
+    height: 24px;
+  }
 }
 @media (min-width: 280px) and (max-width: 767px) {
   #header_desktop,
@@ -578,6 +606,7 @@ figure.carousel-item img {
     padding-right: 0.6rem;
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
+    padding-bottom: 74px;
   }
   /****************************************************************************************************/
   /* Верхнее меню */
