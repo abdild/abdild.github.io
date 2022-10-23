@@ -17,13 +17,15 @@
         display: block;
     }
 
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 12px;
-        padding-right: 12px;
-        width: 100%;
-    }
+    // .container {
+    //     // margin-left: auto;
+    //     // margin-right: auto;
+    //     // padding-left: 12px;
+    //     // padding-right: 12px;
+    //     margin: 0;
+    //     padding: 0;
+    //     width: 100%;
+    // }
 
     .wrapper {
         padding-bottom: 72px;
@@ -33,74 +35,76 @@
     /****************************************************************************************************/
     /* Верхнее меню */
     /****************************************************************************************************/
-    #header_mobile section.container {
+    #header_mobile {
+        width: 100%;
         background-color: #fff;
-        padding: 6px 0;
+        padding-top: 8px;
+        padding-bottom: 12px;
         -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
         box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
     }
 
-    #header_mobile section.container .navbar-brand {
+    #header_mobile .container .navbar-brand {
         height: 24px;
     }
 
-    #header_mobile section.container .navbar-brand img {
+    #header_mobile .container .navbar-brand img {
         height: 32px;
     }
 
-    #header_mobile section.container a.btn:hover {
+    #header_mobile .container a.btn:hover {
         background: initial;
     }
 
-    #header_mobile section.container a.btn svg {
+    #header_mobile .container a.btn svg {
         width: 28px;
         min-height: 28px;
     }
 
-    #header_mobile section.container a.btn svg path {
+    #header_mobile .container a.btn svg path {
         stroke: #66758c;
     }
 
-    #header_mobile section.container a.btn:hover svg path {
+    #header_mobile .container a.btn:hover svg path {
         stroke: #0084ca;
     }
 
-    #header_mobile section.container a.btn.input-group-btn:hover {
+    #header_mobile .container a.btn.input-group-btn:hover {
         background: #0084ca;
     }
 
 
 
-    #header_mobile section.container a.btn.input-group-btn svg path {
+    #header_mobile .container a.btn.input-group-btn svg path {
         stroke: #ffffff;
     }
 
-    #header_mobile section.container a.btn.input-group-btn:hover svg path {
+    #header_mobile .container a.btn.input-group-btn:hover svg path {
         stroke: #ffffff;
     }
 
     /****************************************************************************************************/
     /* Нижнее меню */
     /****************************************************************************************************/
-    #footer_mobile section.container {
+    #footer_mobile .container {
         background-color: #fff;
-        padding: 6px 0;
+        padding: 6px 14px 6px 6px;
         border-top: 1px solid #47556950;
         position: fixed;
         bottom: 0;
     }
 
-    #footer_mobile section.container a.btn {
+    #footer_mobile .container a.btn {
         font-size: 11px;
         font-weight: 600;
         color: #66758c;
     }
 
-    #footer_mobile section.container a.btn:hover {
+    #footer_mobile .container a.btn:hover {
         color: #0084ca;
     }
 
-    footer#footer_mobile section.container a.btn img {
+    footer#footer_mobile .container a.btn img {
         width: 30px;
         height: 30px;
     }
@@ -110,16 +114,16 @@
     //     font-weight: 600;
     // }
 
-    #footer_mobile section.container a.btn svg {
+    #footer_mobile .container a.btn svg {
         width: 28px;
         min-height: 28px;
     }
 
-    #footer_mobile section.container a.btn svg path {
+    #footer_mobile .container a.btn svg path {
         stroke: #66758c;
     }
 
-    #footer_mobile section.container a.btn:hover svg path {
+    #footer_mobile .container a.btn:hover svg path {
         stroke: #0084ca;
     }
 

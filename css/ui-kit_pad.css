@@ -8,14 +8,7 @@
   #footer_mobile {
     display: none;
   }
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 12px;
-    padding-right: 12px;
-    width: 100%;
-  }
-  #header_desktop section.container:nth-child(3) a {
+  #header_desktop .container:nth-child(3) a {
     font-size: 12px;
   }
 }
