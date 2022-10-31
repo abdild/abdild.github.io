@@ -40,7 +40,12 @@
         padding-right: $unit-3;
         margin-top: $unit-3;
         margin-bottom: $unit-3;
-        padding-bottom: 74px;
+        padding-bottom: 82px;
+        min-height: calc(100vh - 215px);
+    }
+
+    section {
+        padding: $unit-3;
     }
 
 
